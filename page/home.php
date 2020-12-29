@@ -8,14 +8,14 @@
           <div class="w3layouts-banner-top">
             <div class="container">
               <div class="agileits-banner-info">
-                <h4>SUN RISE
+                <h4>ALFIRDAUSI
                 </h4>
-                <h3>We know what you love
+                <h3>Penginapan Keluarga Muslim
                 </h3>
-                <p>Welcome to our hotels
+                <p>Selamat Datang
                 </p>
                 <div class="agileits_w3layouts_more menu__item">
-                  <a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More
+                  <a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Selengkapnya
                   </a>
                 </div>
               </div>	
@@ -26,32 +26,13 @@
           <div class="w3layouts-banner-top w3layouts-banner-top1">
             <div class="container">
               <div class="agileits-banner-info">
-                <h4>SUN RISE
-                </h4>
-                <h3>Stay with friends & families
+                <h4>ALFIRDAUSI
+                <h3>Rekomendasi Kamar Terbaik
                 </h3>
-                <p>Come & enjoy precious moment with us
+                <p>Pilih Kamar Terbaik Sesuai Dengan Kebutuhan
                 </p>
                 <div class="agileits_w3layouts_more menu__item">
-                  <a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More
-                  </a>
-                </div>
-              </div>	
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="w3layouts-banner-top w3layouts-banner-top2">
-            <div class="container">
-              <div class="agileits-banner-info">
-                <h4>SUN RISE
-                </h4>
-                <h3>want luxurious vacation?
-                </h3>
-                <p>Get accommodation today
-                </p>
-                <div class="agileits_w3layouts_more menu__item">
-                  <a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More
+                  <a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Selengkapnya
                   </a>
                 </div>
               </div>
@@ -799,8 +780,8 @@ echo"OK";
 </section>
 <!-- /contact -->
 <div class="copy">
-  <p>© 2017 SUNRISE . All Rights Reserved | Design by 
-    <a href="index.php">SUNRISE
+  <p>© 2021 ALFIRDAUSI. All Rights Reserved | Design by 
+    <a href="https://excellenz.id">Excellenz
     </a> 
   </p>
 </div>
