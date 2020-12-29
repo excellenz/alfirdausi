@@ -1,31 +1,166 @@
-<!--sevices-->
-<div class="advantages">
-	<div class="container">
-		<div class="advantages-main">
-				<h3 class="title-w3-agileits">Our Services</h3>
-		   <div class="advantage-bottom">
-			 <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
-			 	<div class="advantage-block ">
-					<i class="fa fa-credit-card" aria-hidden="true"></i>
-			 		<h4>Stay First, Pay After! </h4>
-			 		<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Decorated room, proper air conditioned</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Private balcony</p>
-			 		
-			 	</div>
-			 </div>
-			 <div class="col-md-6 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
-			 	<div class="advantage-block">
-					<i class="fa fa-clock-o" aria-hidden="true"></i>
-			 		<h4>24 Hour Restaurant</h4>
-			 		<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>24 hours room service</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>24-hour Concierge service</p>
-			 	</div>
-			 </div>
-			<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--//sevices-->
+<!-- Gallery -->
+<br>
+<br>
+<section class="portfolio-w3ls" id="gallery">
+  <h3 class="title-w3-agileits title-black-wthree">Our Gallery
+  </h3>
+  <div class="col-md-3 gallery-grid gallery1">
+    <a href="images/g1.jpg" class="swipebox">
+      <img src="images/g1.jpg" class="img-responsive" alt="/">
+      <div class="textbox">
+        <h4>SUN RISE
+        </h4>
+        <p>
+          <i class="fa fa-picture-o" aria-hidden="true">
+          </i>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-3 gallery-grid gallery1">
+    <a href="images/g2.jpg" class="swipebox">
+      <img src="images/g2.jpg" class="img-responsive" alt="/">
+      <div class="textbox">
+        <h4>SUN RISE
+        </h4>
+        <p>
+          <i class="fa fa-picture-o" aria-hidden="true">
+          </i>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-3 gallery-grid gallery1">
+    <a href="images/g3.jpg" class="swipebox">
+      <img src="images/g3.jpg" class="img-responsive" alt="/">
+      <div class="textbox">
+        <h4>SUN RISE
+        </h4>
+        <p>
+          <i class="fa fa-picture-o" aria-hidden="true">
+          </i>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-3 gallery-grid gallery1">
+    <a href="images/g4.jpg" class="swipebox">
+      <img src="images/g4.jpg" class="img-responsive" alt="/">
+      <div class="textbox">
+        <h4>SUN RISE
+        </h4>
+        <p>
+          <i class="fa fa-picture-o" aria-hidden="true">
+          </i>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-3 gallery-grid gallery1">
+    <a href="images/g5.jpg" class="swipebox">
+      <img src="images/g5.jpg" class="img-responsive" alt="/">
+      <div class="textbox">
+        <h4>SUN RISE
+        </h4>
+        <p>
+          <i class="fa fa-picture-o" aria-hidden="true">
+          </i>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-3 gallery-grid gallery1">
+    <a href="images/g6.jpg" class="swipebox">
+      <img src="images/g6.jpg" class="img-responsive" alt="/">
+      <div class="textbox">
+        <h4>SUN RISE
+        </h4>
+        <p>
+          <i class="fa fa-picture-o" aria-hidden="true">
+          </i>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-3 gallery-grid gallery1">
+    <a href="images/g6.jpg" class="swipebox">
+      <img src="images/g7.jpg" class="img-responsive" alt="/">
+      <div class="textbox">
+        <h4>SUN RISE
+        </h4>
+        <p>
+          <i class="fa fa-picture-o" aria-hidden="true">
+          </i>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-3 gallery-grid gallery1">
+    <a href="images/g6.jpg" class="swipebox">
+      <img src="images/g8.jpg" class="img-responsive" alt="/">
+      <div class="textbox">
+        <h4>SUN RISE
+        </h4>
+        <p>
+          <i class="fa fa-picture-o" aria-hidden="true">
+          </i>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-3 gallery-grid gallery1">
+    <a href="images/g9.jpg" class="swipebox">
+      <img src="images/g9.jpg" class="img-responsive" alt="/">
+      <div class="textbox">
+        <h4>SUN RISE
+        </h4>
+        <p>
+          <i class="fa fa-picture-o" aria-hidden="true">
+          </i>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-3 gallery-grid gallery1">
+    <a href="images/g10.jpg" class="swipebox">
+      <img src="images/g10.jpg" class="img-responsive" alt="/">
+      <div class="textbox">
+        <h4>SUN RISE
+        </h4>
+        <p>
+          <i class="fa fa-picture-o" aria-hidden="true">
+          </i>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-3 gallery-grid gallery1">
+    <a href="images/g4.jpg" class="swipebox">
+      <img src="images/g4.jpg" class="img-responsive" alt="/">
+      <div class="textbox">
+        <h4>SUN RISE
+        </h4>
+        <p>
+          <i class="fa fa-picture-o" aria-hidden="true">
+          </i>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-3 gallery-grid gallery1">
+    <a href="images/g2.jpg" class="swipebox">
+      <img src="images/g2.jpg" class="img-responsive" alt="/">
+      <div class="textbox">
+        <h4>SUN RISE
+        </h4>
+        <p>
+          <i class="fa fa-picture-o" aria-hidden="true">
+          </i>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="clearfix"> 
+  </div>
+</section>
+<!-- //gallery -->

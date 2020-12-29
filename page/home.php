@@ -80,7 +80,7 @@
 <div id="availability-agileits">
   <div class="col-md-12 book-form-left-w3layouts">
     <a href="admin/reservation.php">
-      <h2>ROOM RESERVATION
+      <h2>BOOKING KAMAR SEKARANG
       </h2>
     </a>
   </div>
@@ -92,8 +92,8 @@
   <div class="container">	
     <div class="agileits_banner_bottom">
       <h3>
-        <span>Experience a good stay, enjoy fantastic offers
-        </span> Find our friendly welcoming reception
+        <span>Rasakan Kenyamanan Tinggal, Nikmati Layanan Terbaik Kami
+        </span> Fasilitas Penginapan Alfirdusi
       </h3>
     </div>
     <div class="w3ls_banner_bottom_grids">
@@ -102,9 +102,9 @@
           <div class="w3_grid_effect">
             <span class="cbp-ig-icon w3_road">
             </span>
-            <h4 class="cbp-ig-title">MASTER BEDROOMS
+            <h4 class="cbp-ig-title">KAMAR LUAS
             </h4>
-            <span class="cbp-ig-category">SUN RISE
+            <span class="cbp-ig-category">ALFIRDAUSI
             </span>
           </div>
         </li>
@@ -112,9 +112,9 @@
           <div class="w3_grid_effect">
             <span class="cbp-ig-icon w3_cube">
             </span>
-            <h4 class="cbp-ig-title">SEA VIEW BALCONY
+            <h4 class="cbp-ig-title">FASILITAS LENGKAP
             </h4>
-            <span class="cbp-ig-category">SUN RISE
+            <span class="cbp-ig-category">ALFIRDAUSI
             </span>
           </div>
         </li>
@@ -122,9 +122,9 @@
           <div class="w3_grid_effect">
             <span class="cbp-ig-icon w3_users">
             </span>
-            <h4 class="cbp-ig-title">LARGE CAFE
+            <h4 class="cbp-ig-title">PESAN MAKAN
             </h4>
-            <span class="cbp-ig-category">SUN RISE
+            <span class="cbp-ig-category">ALFIRDAUSI
             </span>
           </div>
         </li>
@@ -132,9 +132,9 @@
           <div class="w3_grid_effect">
             <span class="cbp-ig-icon w3_ticket">
             </span>
-            <h4 class="cbp-ig-title">WIFI COVERAGE
+            <h4 class="cbp-ig-title">GRATIS WIFI
             </h4>
-            <span class="cbp-ig-category">SUN RISE
+            <span class="cbp-ig-category">ALFIRDAUSI
             </span>
           </div>
         </li>
@@ -147,24 +147,24 @@
 <div class="advantages">
   <div class="container">
     <div class="advantages-main">
-      <h3 class="title-w3-agileits">Our Services
+      <h3 class="title-w3-agileits">Lokasi Penginapan Alfirdausi
       </h3>
       <div class="advantage-bottom">
         <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
           <div class="advantage-block ">
             <i class="fa fa-credit-card" aria-hidden="true">
             </i>
-            <h4>Stay First, Pay After! 
+            <h4>Area Ponpes Husnul Khotimah 
             </h4>
-            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.
+            <p>Kamar tipe A, G, H , I, J dan K  adalah terletak  di dalam  area ponpes Husnul Khotimah 1, dari HK MART PUTRI ke arah timur kira-kira 10 m sebelah kanan jalan, sebelah barat bangunan RUMAH SEHAT  yang baru, kira-kira 15 meter dari gerbang utama ponpes  Al Multazam 1.
             </p>
             <p>
               <i class="fa fa-check" aria-hidden="true">
-              </i>Decorated room, proper air conditioned
+              </i>Terletak di dalam area ponpes HK
             </p>
             <p>
               <i class="fa fa-check" aria-hidden="true">
-              </i>Private balcony
+              </i>Prioritas Untuk Wali Santri HK
             </p>
           </div>
         </div>
@@ -172,17 +172,17 @@
           <div class="advantage-block">
             <i class="fa fa-clock-o" aria-hidden="true">
             </i>
-            <h4>24 Hour Restaurant
+            <h4>Luar Area Ponpes Husnul Khotimah
             </h4>
-            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.
+            <p>Kamar tipe B, C, D , E ,  F, L dan M  adalah terletak  di luar area pondok pesantren Husnul Khotimah 1, dekat jembatan dan lapangan sepak bola, kira-kira 80 meter sebelum gerbang depan ponpes  Husnul Khotimah 1 atau kira kira 100 meter dari gerbang utama ponpes  Al Multazam 1.
             </p>
             <p>
               <i class="fa fa-check" aria-hidden="true">
-              </i>24 hours room service
+              </i>Dekat Ponpes HK 1 dan Al Multazam 1
             </p>
             <p>
               <i class="fa fa-check" aria-hidden="true">
-              </i>24-hour Concierge service
+              </i>Prioritas Untuk Wali Santri Multazam
             </p>
           </div>
         </div>
@@ -196,14 +196,14 @@
 <!-- rooms & rates -->
 <div class="plans-section" id="rooms">
   <div class="container">
-    <h3 class="title-w3-agileits title-black-wthree">Rooms And Rates
+    <h3 class="title-w3-agileits title-black-wthree">TIPE KAMAR ALFIRDAUSI
     </h3>
     <div class="priceing-table-main">
       <div class="col-md-3 price-grid">
         <div class="price-block agile">
           <div class="price-gd-top">
             <img src="images/r1.jpg" alt=" " class="img-responsive" />
-            <h4>Deluxe Room
+            <h4>Tipe A
             </h4>
           </div>
           <div class="price-gd-bottom">
@@ -233,10 +233,12 @@
             </div>
             <div class="price-selet">	
               <h3>
-                <span>$
-                </span>320
-              </h3>						
-              <a href="admin/reservation.php" >Book Now
+                <span>Rp.
+                </span>330rb / hari
+              </h3>
+              <a href="admin/kamar-tipe-a.php" >Detail
+              </a>						
+              <a href="admin/reservation.php" >Pesan
               </a>
             </div>
           </div>
@@ -246,7 +248,7 @@
         <div class="price-block agile">
           <div class="price-gd-top">
             <img src="images/r2.jpg" alt=" " class="img-responsive" />
-            <h4>Luxury Room
+            <h4>Tipe B
             </h4>
           </div>
           <div class="price-gd-bottom">
@@ -276,10 +278,12 @@
             </div>
             <div class="price-selet">
               <h3>
-                <span>$
-                </span>220
+                <span>Rp.
+                </span>330rb / hari
               </h3>
-              <a href="admin/reservation.php" >Book Now
+              <a href="admin/kamar-tipe-a.php" >Detail
+              </a>            
+              <a href="admin/reservation.php" >Pesan
               </a>
             </div>
           </div>
@@ -289,7 +293,7 @@
         <div class="price-block agile">
           <div class="price-gd-top">
             <img src="images/r3.jpg" alt=" " class="img-responsive" />
-            <h4>Guest House
+            <h4>Tipe C
             </h4>
           </div>
           <div class="price-gd-bottom">
@@ -319,10 +323,12 @@
             </div>
             <div class="price-selet">
               <h3>
-                <span>$
-                </span>180
+                <span>Rp.
+                </span>330rb / hari
               </h3>
-              <a href="admin/reservation.php" >Book Now
+              <a href="admin/kamar-tipe-a.php" >Detail
+              </a>            
+              <a href="admin/reservation.php" >Pesan
               </a>
             </div>
           </div>
@@ -332,7 +338,7 @@
         <div class="price-block agile">
           <div class="price-gd-top ">
             <img src="images/r4.jpg" alt=" " class="img-responsive" />
-            <h4>Single Room
+            <h4>Tipe D
             </h4>
           </div>
           <div class="price-gd-bottom">
@@ -362,10 +368,432 @@
             </div>
             <div class="price-selet">
               <h3>
-                <span>$
-                </span> 150
+                <span>Rp.
+                </span>330rb / hari
               </h3>
-              <a href="admin/reservation.php" >Book Now
+              <a href="admin/kamar-tipe-a.php" >Detail
+              </a>            
+              <a href="admin/reservation.php" >Pesan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"> 
+      </div>
+    </div>
+    <br>
+    <div class="priceing-table-main">
+      <div class="col-md-3 price-grid">
+        <div class="price-block agile">
+          <div class="price-gd-top">
+            <img src="images/r1.jpg" alt=" " class="img-responsive" />
+            <h4>Tipe E
+            </h4>
+          </div>
+          <div class="price-gd-bottom">
+            <div class="price-list">
+              <ul>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+              </ul>
+            </div>
+            <div class="price-selet"> 
+              <h3>
+                <span>Rp.
+                </span>330rb / hari
+              </h3>
+              <a href="admin/kamar-tipe-a.php" >Detail
+              </a>            
+              <a href="admin/reservation.php" >Pesan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 price-grid ">
+        <div class="price-block agile">
+          <div class="price-gd-top">
+            <img src="images/r2.jpg" alt=" " class="img-responsive" />
+            <h4>Tipe F
+            </h4>
+          </div>
+          <div class="price-gd-bottom">
+            <div class="price-list">
+              <ul>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+              </ul>
+            </div>
+            <div class="price-selet">
+              <h3>
+                <span>Rp.
+                </span>250rb / hari
+              </h3>
+              <a href="admin/kamar-tipe-a.php" >Detail
+              </a>            
+              <a href="admin/reservation.php" >Pesan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 price-grid lost">
+        <div class="price-block agile">
+          <div class="price-gd-top">
+            <img src="images/r3.jpg" alt=" " class="img-responsive" />
+            <h4>Tipe G
+            </h4>
+          </div>
+          <div class="price-gd-bottom">
+            <div class="price-list">
+              <ul>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+              </ul>
+            </div>
+            <div class="price-selet">
+              <h3>
+                <span>Rp.
+                </span>330rb / hari
+              </h3>
+              <a href="admin/kamar-tipe-a.php" >Detail
+              </a>            
+              <a href="admin/reservation.php" >Pesan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 price-grid wthree lost">
+        <div class="price-block agile">
+          <div class="price-gd-top ">
+            <img src="images/r4.jpg" alt=" " class="img-responsive" />
+            <h4>Tipe H
+            </h4>
+          </div>
+          <div class="price-gd-bottom">
+            <div class="price-list">
+              <ul>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+              </ul>
+            </div>
+            <div class="price-selet">
+              <h3>
+                <span>Rp.
+                </span>330rb / hari
+              </h3>
+              <a href="admin/kamar-tipe-a.php" >Detail
+              </a>            
+              <a href="admin/reservation.php" >Pesan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"> 
+      </div>
+    </div>
+    <br>
+    <div class="priceing-table-main">
+      <div class="col-md-3 price-grid">
+        <div class="price-block agile">
+          <div class="price-gd-top">
+            <img src="images/r1.jpg" alt=" " class="img-responsive" />
+            <h4>Tipe I
+            </h4>
+          </div>
+          <div class="price-gd-bottom">
+            <div class="price-list">
+              <ul>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+              </ul>
+            </div>
+            <div class="price-selet"> 
+              <h3>
+                <span>Rp.
+                </span>330rb / hari
+              </h3>
+              <a href="admin/kamar-tipe-a.php" >Detail
+              </a>            
+              <a href="admin/reservation.php" >Pesan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 price-grid ">
+        <div class="price-block agile">
+          <div class="price-gd-top">
+            <img src="images/r2.jpg" alt=" " class="img-responsive" />
+            <h4>Tipe J
+            </h4>
+          </div>
+          <div class="price-gd-bottom">
+            <div class="price-list">
+              <ul>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+              </ul>
+            </div>
+            <div class="price-selet">
+              <h3>
+                <span>Rp.
+                </span>330rb / hari
+              </h3>
+              <a href="admin/kamar-tipe-a.php" >Detail
+              </a>            
+              <a href="admin/reservation.php" >Pesan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 price-grid lost">
+        <div class="price-block agile">
+          <div class="price-gd-top">
+            <img src="images/r3.jpg" alt=" " class="img-responsive" />
+            <h4>Tipe K
+            </h4>
+          </div>
+          <div class="price-gd-bottom">
+            <div class="price-list">
+              <ul>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+              </ul>
+            </div>
+            <div class="price-selet">
+              <h3>
+                <span>Rp.
+                </span>330rb / hari
+              </h3>
+              <a href="admin/kamar-tipe-a.php" >Detail
+              </a>            
+              <a href="admin/reservation.php" >Pesan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 price-grid wthree lost">
+        <div class="price-block agile">
+          <div class="price-gd-top ">
+            <img src="images/r4.jpg" alt=" " class="img-responsive" />
+            <h4>Tipe L
+            </h4>
+          </div>
+          <div class="price-gd-bottom">
+            <div class="price-list">
+              <ul>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+              </ul>
+            </div>
+            <div class="price-selet">
+              <h3>
+                <span>Rp.
+                </span>350rb / hari
+              </h3>
+              <a href="admin/kamar-tipe-a.php" >Detail
+              </a>            
+              <a href="admin/reservation.php" >Pesan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"> 
+      </div>
+    </div>
+    <br>
+    <div class="priceing-table-main">
+      <div class="col-md-3 price-grid">
+        <div class="price-block agile">
+          <div class="price-gd-top">
+            <img src="images/r1.jpg" alt=" " class="img-responsive" />
+            <h4>Tipe M
+            </h4>
+          </div>
+          <div class="price-gd-bottom">
+            <div class="price-list">
+              <ul>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star" aria-hidden="true">
+                  </i>
+                </li>
+                <li>
+                  <i class="fa fa-star-o" aria-hidden="true">
+                  </i>
+                </li>
+              </ul>
+            </div>
+            <div class="price-selet"> 
+              <h3>
+                <span>Rp.
+                </span>350rb / hari
+              </h3>
+              <a href="admin/kamar-tipe-a.php" >Detail
+              </a>            
+              <a href="admin/reservation.php" >Pesan
               </a>
             </div>
           </div>
@@ -377,172 +805,6 @@
   </div>
 </div>
 <!--// rooms & rates -->
-<!-- Gallery -->
-<br>
-<br>
-<section class="portfolio-w3ls" id="gallery">
-  <h3 class="title-w3-agileits title-black-wthree">Our Gallery
-  </h3>
-  <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g1.jpg" class="swipebox">
-      <img src="images/g1.jpg" class="img-responsive" alt="/">
-      <div class="textbox">
-        <h4>SUN RISE
-        </h4>
-        <p>
-          <i class="fa fa-picture-o" aria-hidden="true">
-          </i>
-        </p>
-      </div>
-    </a>
-  </div>
-  <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g2.jpg" class="swipebox">
-      <img src="images/g2.jpg" class="img-responsive" alt="/">
-      <div class="textbox">
-        <h4>SUN RISE
-        </h4>
-        <p>
-          <i class="fa fa-picture-o" aria-hidden="true">
-          </i>
-        </p>
-      </div>
-    </a>
-  </div>
-  <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g3.jpg" class="swipebox">
-      <img src="images/g3.jpg" class="img-responsive" alt="/">
-      <div class="textbox">
-        <h4>SUN RISE
-        </h4>
-        <p>
-          <i class="fa fa-picture-o" aria-hidden="true">
-          </i>
-        </p>
-      </div>
-    </a>
-  </div>
-  <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g4.jpg" class="swipebox">
-      <img src="images/g4.jpg" class="img-responsive" alt="/">
-      <div class="textbox">
-        <h4>SUN RISE
-        </h4>
-        <p>
-          <i class="fa fa-picture-o" aria-hidden="true">
-          </i>
-        </p>
-      </div>
-    </a>
-  </div>
-  <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g5.jpg" class="swipebox">
-      <img src="images/g5.jpg" class="img-responsive" alt="/">
-      <div class="textbox">
-        <h4>SUN RISE
-        </h4>
-        <p>
-          <i class="fa fa-picture-o" aria-hidden="true">
-          </i>
-        </p>
-      </div>
-    </a>
-  </div>
-  <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g6.jpg" class="swipebox">
-      <img src="images/g6.jpg" class="img-responsive" alt="/">
-      <div class="textbox">
-        <h4>SUN RISE
-        </h4>
-        <p>
-          <i class="fa fa-picture-o" aria-hidden="true">
-          </i>
-        </p>
-      </div>
-    </a>
-  </div>
-  <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g6.jpg" class="swipebox">
-      <img src="images/g7.jpg" class="img-responsive" alt="/">
-      <div class="textbox">
-        <h4>SUN RISE
-        </h4>
-        <p>
-          <i class="fa fa-picture-o" aria-hidden="true">
-          </i>
-        </p>
-      </div>
-    </a>
-  </div>
-  <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g6.jpg" class="swipebox">
-      <img src="images/g8.jpg" class="img-responsive" alt="/">
-      <div class="textbox">
-        <h4>SUN RISE
-        </h4>
-        <p>
-          <i class="fa fa-picture-o" aria-hidden="true">
-          </i>
-        </p>
-      </div>
-    </a>
-  </div>
-  <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g9.jpg" class="swipebox">
-      <img src="images/g9.jpg" class="img-responsive" alt="/">
-      <div class="textbox">
-        <h4>SUN RISE
-        </h4>
-        <p>
-          <i class="fa fa-picture-o" aria-hidden="true">
-          </i>
-        </p>
-      </div>
-    </a>
-  </div>
-  <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g10.jpg" class="swipebox">
-      <img src="images/g10.jpg" class="img-responsive" alt="/">
-      <div class="textbox">
-        <h4>SUN RISE
-        </h4>
-        <p>
-          <i class="fa fa-picture-o" aria-hidden="true">
-          </i>
-        </p>
-      </div>
-    </a>
-  </div>
-  <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g4.jpg" class="swipebox">
-      <img src="images/g4.jpg" class="img-responsive" alt="/">
-      <div class="textbox">
-        <h4>SUN RISE
-        </h4>
-        <p>
-          <i class="fa fa-picture-o" aria-hidden="true">
-          </i>
-        </p>
-      </div>
-    </a>
-  </div>
-  <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g2.jpg" class="swipebox">
-      <img src="images/g2.jpg" class="img-responsive" alt="/">
-      <div class="textbox">
-        <h4>SUN RISE
-        </h4>
-        <p>
-          <i class="fa fa-picture-o" aria-hidden="true">
-          </i>
-        </p>
-      </div>
-    </a>
-  </div>
-  <div class="clearfix"> 
-  </div>
-</section>
-<!-- //gallery -->
 <!-- visitors -->
 <div class="w3l-visitors-agile" >
   <div class="container">
