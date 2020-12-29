@@ -73,10 +73,10 @@ include('db.php');
 					<nav class="menu menu--iris">
 						<ul class="nav navbar-nav menu__list">
 							<li class="menu__item menu__item--current"><a href="index.php">Home</a></li>
-							<li class="menu__item"><a href="#" >Tentang Kami</a></li>
-							<li class="menu__item"><a href="#" >Tipe Kamar</a></li>
-							<li class="menu__item"><a href="#" >Galeri</a></li>
-							<li class="menu__item"><a href="#" >Hubungi Kami</a></li>
+							<li class="menu__item"><a href="index.php?page=tentang-kami" >Tentang Kami</a></li>
+							<li class="menu__item"><a href="index.php?page=tipe-kamar" >Tipe Kamar</a></li>
+							<li class="menu__item"><a href="index.php?page=galeri" >Galeri</a></li>
+							<li class="menu__item"><a href="index.php?page=hubungi-kami" >Hubungi Kami</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -87,7 +87,7 @@ include('db.php');
 <!-- //header -->
 
 
-   <?php 
+   	<?php 
     if(!isset($_GET['page'])) {
         include "page/home.php";
     } else {
@@ -95,7 +95,7 @@ include('db.php');
 
       include "page/".$page.".php";
     }
-    
+
     ?>
 
 
