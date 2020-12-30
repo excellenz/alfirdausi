@@ -236,7 +236,7 @@
                 <span>Rp.
                 </span>330rb / hari
               </h3>
-              <a href="admin/kamar-tipe-a.php" >Detail
+              <a href="index.php?page=tipe-kamar-a" >Detail
               </a>						
               <a href="admin/reservation.php" >Pesan
               </a>
@@ -281,7 +281,7 @@
                 <span>Rp.
                 </span>330rb / hari
               </h3>
-              <a href="admin/kamar-tipe-a.php" >Detail
+              <a href="index.php?page=tipe-kamar-b" >Detail
               </a>            
               <a href="admin/reservation.php" >Pesan
               </a>
@@ -326,7 +326,7 @@
                 <span>Rp.
                 </span>330rb / hari
               </h3>
-              <a href="admin/kamar-tipe-a.php" >Detail
+              <a href="index.php?page=tipe-kamar-c" >Detail
               </a>            
               <a href="admin/reservation.php" >Pesan
               </a>
@@ -371,7 +371,7 @@
                 <span>Rp.
                 </span>330rb / hari
               </h3>
-              <a href="admin/kamar-tipe-a.php" >Detail
+              <a href="index.php?page=tipe-kamar-d" >Detail
               </a>            
               <a href="admin/reservation.php" >Pesan
               </a>
@@ -421,7 +421,7 @@
                 <span>Rp.
                 </span>330rb / hari
               </h3>
-              <a href="admin/kamar-tipe-a.php" >Detail
+              <a href="index.php?page=tipe-kamar-e" >Detail
               </a>            
               <a href="admin/reservation.php" >Pesan
               </a>
@@ -466,7 +466,7 @@
                 <span>Rp.
                 </span>250rb / hari
               </h3>
-              <a href="admin/kamar-tipe-a.php" >Detail
+              <a href="index.php?page=tipe-kamar-f" >Detail
               </a>            
               <a href="admin/reservation.php" >Pesan
               </a>
@@ -511,7 +511,7 @@
                 <span>Rp.
                 </span>330rb / hari
               </h3>
-              <a href="admin/kamar-tipe-a.php" >Detail
+              <a href="index.php?page=tipe-kamar-g" >Detail
               </a>            
               <a href="admin/reservation.php" >Pesan
               </a>
@@ -556,7 +556,7 @@
                 <span>Rp.
                 </span>330rb / hari
               </h3>
-              <a href="admin/kamar-tipe-a.php" >Detail
+              <a href="index.php?page=tipe-kamar-h" >Detail
               </a>            
               <a href="admin/reservation.php" >Pesan
               </a>
@@ -606,7 +606,7 @@
                 <span>Rp.
                 </span>330rb / hari
               </h3>
-              <a href="admin/kamar-tipe-a.php" >Detail
+              <a href="index.php?page=tipe-kamar-i" >Detail
               </a>            
               <a href="admin/reservation.php" >Pesan
               </a>
@@ -651,7 +651,7 @@
                 <span>Rp.
                 </span>330rb / hari
               </h3>
-              <a href="admin/kamar-tipe-a.php" >Detail
+              <a href="index.php?page=tipe-kamar-j" >Detail
               </a>            
               <a href="admin/reservation.php" >Pesan
               </a>
@@ -696,7 +696,7 @@
                 <span>Rp.
                 </span>330rb / hari
               </h3>
-              <a href="admin/kamar-tipe-a.php" >Detail
+              <a href="index.php?page=tipe-kamar-k" >Detail
               </a>            
               <a href="admin/reservation.php" >Pesan
               </a>
@@ -741,7 +741,7 @@
                 <span>Rp.
                 </span>350rb / hari
               </h3>
-              <a href="admin/kamar-tipe-a.php" >Detail
+              <a href="index.php?page=tipe-kamar-l" >Detail
               </a>            
               <a href="admin/reservation.php" >Pesan
               </a>
@@ -791,7 +791,7 @@
                 <span>Rp.
                 </span>350rb / hari
               </h3>
-              <a href="admin/kamar-tipe-a.php" >Detail
+              <a href="index.php?page=tipe-kamar-m" >Detail
               </a>            
               <a href="admin/reservation.php" >Pesan
               </a>
