@@ -7,7 +7,7 @@
       <div class="col-md-3 price-grid">
         <div class="price-block agile">
           <div class="price-gd-top">
-            <img src="images/r1.jpg" alt=" " class="img-responsive" />
+            <img src="images/a.jpg" alt=" " class="img-responsive" />
             <h4>Tipe A
             </h4>
           </div>
@@ -52,7 +52,7 @@
       <div class="col-md-3 price-grid ">
         <div class="price-block agile">
           <div class="price-gd-top">
-            <img src="images/r2.jpg" alt=" " class="img-responsive" />
+            <img src="images/b.jpg" alt=" " class="img-responsive" />
             <h4>Tipe B
             </h4>
           </div>
@@ -97,7 +97,7 @@
       <div class="col-md-3 price-grid lost">
         <div class="price-block agile">
           <div class="price-gd-top">
-            <img src="images/r3.jpg" alt=" " class="img-responsive" />
+            <img src="images/c.jpg" alt=" " class="img-responsive" />
             <h4>Tipe C
             </h4>
           </div>
@@ -142,7 +142,7 @@
       <div class="col-md-3 price-grid wthree lost">
         <div class="price-block agile">
           <div class="price-gd-top ">
-            <img src="images/r4.jpg" alt=" " class="img-responsive" />
+            <img src="images/d.jpg" alt=" " class="img-responsive" />
             <h4>Tipe D
             </h4>
           </div>
@@ -192,7 +192,7 @@
       <div class="col-md-3 price-grid">
         <div class="price-block agile">
           <div class="price-gd-top">
-            <img src="images/r1.jpg" alt=" " class="img-responsive" />
+            <img src="images/e.jpg" alt=" " class="img-responsive" />
             <h4>Tipe E
             </h4>
           </div>
@@ -237,7 +237,7 @@
       <div class="col-md-3 price-grid ">
         <div class="price-block agile">
           <div class="price-gd-top">
-            <img src="images/r2.jpg" alt=" " class="img-responsive" />
+            <img src="images/f.jpg" alt=" " class="img-responsive" />
             <h4>Tipe F
             </h4>
           </div>
@@ -282,7 +282,7 @@
       <div class="col-md-3 price-grid lost">
         <div class="price-block agile">
           <div class="price-gd-top">
-            <img src="images/r3.jpg" alt=" " class="img-responsive" />
+            <img src="images/g.jpg" alt=" " class="img-responsive" />
             <h4>Tipe G
             </h4>
           </div>
@@ -327,7 +327,7 @@
       <div class="col-md-3 price-grid wthree lost">
         <div class="price-block agile">
           <div class="price-gd-top ">
-            <img src="images/r4.jpg" alt=" " class="img-responsive" />
+            <img src="images/h.jpg" alt=" " class="img-responsive" />
             <h4>Tipe H
             </h4>
           </div>
@@ -377,7 +377,7 @@
       <div class="col-md-3 price-grid">
         <div class="price-block agile">
           <div class="price-gd-top">
-            <img src="images/r1.jpg" alt=" " class="img-responsive" />
+            <img src="images/i.jpg" alt=" " class="img-responsive" />
             <h4>Tipe I
             </h4>
           </div>
@@ -422,7 +422,7 @@
       <div class="col-md-3 price-grid ">
         <div class="price-block agile">
           <div class="price-gd-top">
-            <img src="images/r2.jpg" alt=" " class="img-responsive" />
+            <img src="images/j.jpg" alt=" " class="img-responsive" />
             <h4>Tipe J
             </h4>
           </div>
@@ -467,7 +467,7 @@
       <div class="col-md-3 price-grid lost">
         <div class="price-block agile">
           <div class="price-gd-top">
-            <img src="images/r3.jpg" alt=" " class="img-responsive" />
+            <img src="images/k.jpg" alt=" " class="img-responsive" />
             <h4>Tipe K
             </h4>
           </div>
@@ -512,7 +512,7 @@
       <div class="col-md-3 price-grid wthree lost">
         <div class="price-block agile">
           <div class="price-gd-top ">
-            <img src="images/r4.jpg" alt=" " class="img-responsive" />
+            <img src="images/l.jpg" alt=" " class="img-responsive" />
             <h4>Tipe L
             </h4>
           </div>
@@ -562,7 +562,7 @@
       <div class="col-md-3 price-grid">
         <div class="price-block agile">
           <div class="price-gd-top">
-            <img src="images/r1.jpg" alt=" " class="img-responsive" />
+            <img src="images/m.jpg" alt=" " class="img-responsive" />
             <h4>Tipe M
             </h4>
           </div>
