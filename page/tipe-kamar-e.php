@@ -12,7 +12,7 @@
             <div class="w3layouts_work_grid_left">
               <img src="images/5.jpg" alt=" " class="img-responsive" />
               <div class="w3layouts_work_grid_left_pos">
-                <img src="images/c1.jpg" alt=" " class="img-responsive" />
+                <img src="images/c2.jpg" alt=" " class="img-responsive" />
               </div>
             </div>
             <div class="w3layouts_work_grid_right">
