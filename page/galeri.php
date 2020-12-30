@@ -8,7 +8,7 @@
     <a href="images/g1.jpg" class="swipebox">
       <img src="images/g1.jpg" class="img-responsive" alt="/">
       <div class="textbox">
-        <h4>SUN RISE
+        <h4>Alfirdausi
         </h4>
         <p>
           <i class="fa fa-picture-o" aria-hidden="true">
@@ -21,7 +21,7 @@
     <a href="images/g2.jpg" class="swipebox">
       <img src="images/g2.jpg" class="img-responsive" alt="/">
       <div class="textbox">
-        <h4>SUN RISE
+        <h4>Alfirdausi
         </h4>
         <p>
           <i class="fa fa-picture-o" aria-hidden="true">
@@ -34,7 +34,7 @@
     <a href="images/g3.jpg" class="swipebox">
       <img src="images/g3.jpg" class="img-responsive" alt="/">
       <div class="textbox">
-        <h4>SUN RISE
+        <h4>Alfirdausi
         </h4>
         <p>
           <i class="fa fa-picture-o" aria-hidden="true">
@@ -47,7 +47,7 @@
     <a href="images/g4.jpg" class="swipebox">
       <img src="images/g4.jpg" class="img-responsive" alt="/">
       <div class="textbox">
-        <h4>SUN RISE
+        <h4>Alfirdausi
         </h4>
         <p>
           <i class="fa fa-picture-o" aria-hidden="true">
@@ -60,7 +60,7 @@
     <a href="images/g5.jpg" class="swipebox">
       <img src="images/g5.jpg" class="img-responsive" alt="/">
       <div class="textbox">
-        <h4>SUN RISE
+        <h4>Alfirdausi
         </h4>
         <p>
           <i class="fa fa-picture-o" aria-hidden="true">
@@ -73,7 +73,7 @@
     <a href="images/g6.jpg" class="swipebox">
       <img src="images/g6.jpg" class="img-responsive" alt="/">
       <div class="textbox">
-        <h4>SUN RISE
+        <h4>Alfirdausi
         </h4>
         <p>
           <i class="fa fa-picture-o" aria-hidden="true">
@@ -86,7 +86,7 @@
     <a href="images/g6.jpg" class="swipebox">
       <img src="images/g7.jpg" class="img-responsive" alt="/">
       <div class="textbox">
-        <h4>SUN RISE
+        <h4>Alfirdausi
         </h4>
         <p>
           <i class="fa fa-picture-o" aria-hidden="true">
@@ -99,7 +99,7 @@
     <a href="images/g6.jpg" class="swipebox">
       <img src="images/g8.jpg" class="img-responsive" alt="/">
       <div class="textbox">
-        <h4>SUN RISE
+        <h4>Alfirdausi
         </h4>
         <p>
           <i class="fa fa-picture-o" aria-hidden="true">
@@ -112,7 +112,7 @@
     <a href="images/g9.jpg" class="swipebox">
       <img src="images/g9.jpg" class="img-responsive" alt="/">
       <div class="textbox">
-        <h4>SUN RISE
+        <h4>Alfirdausi
         </h4>
         <p>
           <i class="fa fa-picture-o" aria-hidden="true">
@@ -125,7 +125,7 @@
     <a href="images/g10.jpg" class="swipebox">
       <img src="images/g10.jpg" class="img-responsive" alt="/">
       <div class="textbox">
-        <h4>SUN RISE
+        <h4>Alfirdausi
         </h4>
         <p>
           <i class="fa fa-picture-o" aria-hidden="true">
@@ -138,7 +138,7 @@
     <a href="images/g4.jpg" class="swipebox">
       <img src="images/g4.jpg" class="img-responsive" alt="/">
       <div class="textbox">
-        <h4>SUN RISE
+        <h4>Alfirdausi
         </h4>
         <p>
           <i class="fa fa-picture-o" aria-hidden="true">
@@ -151,7 +151,7 @@
     <a href="images/g2.jpg" class="swipebox">
       <img src="images/g2.jpg" class="img-responsive" alt="/">
       <div class="textbox">
-        <h4>SUN RISE
+        <h4>Alfirdausi
         </h4>
         <p>
           <i class="fa fa-picture-o" aria-hidden="true">

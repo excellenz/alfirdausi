@@ -1,7 +1,7 @@
 <!-- visitors -->
 <div class="w3l-visitors-agile" >
   <div class="container">
-    <h3 class="title-w3-agileits title-black-wthree">Kamar Tipe A
+    <h3 class="title-w3-agileits title-black-wthree">Kamar Tipe B
     </h3> 
   </div>
   <div class="w3layouts_work_grids">

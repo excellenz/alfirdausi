@@ -125,10 +125,6 @@ include('db.php');
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="index.php?page=galeri" >Galeri
-                  </a>
-                </li>
-                <li class="menu__item">
                   <a href="index.php?page=hubungi-kami" >Hubungi Kami
                   </a>
                 </li>
