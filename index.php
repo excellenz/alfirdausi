@@ -117,19 +117,19 @@ include('db.php');
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" >Tentang Kami
+                  <a href="index.php?page=tentang-kami" >Tentang Kami
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" >Tipe Kamar
+                  <a href="index.php?page=tipe-kamar" >Tipe Kamar
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" >Galeri
+                  <a href="index.php?page=galeri" >Galeri
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" >Hubungi Kami
+                  <a href="index.php?page=hubungi-kami" >Hubungi Kami
                   </a>
                 </li>
               </ul>
