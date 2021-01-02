@@ -8,7 +8,7 @@
         <div class="price-block agile">
           <div class="price-gd-top" >
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SdGb7p17u_U?rel=0"></iframe>
                     </div>
           </div>
           <div class="price-gd-bottom">
@@ -50,7 +50,7 @@
         <div class="price-block agile">
           <div class="price-gd-top">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Oi5bsr5a4sE?rel=0"></iframe>
                     </div>
           </div>
           <div class="price-gd-bottom">
@@ -92,7 +92,7 @@
         <div class="price-block agile">
           <div class="price-gd-top">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XTZAAkrB7eM?rel=0"></iframe>
                     </div>
           </div>
           <div class="price-gd-bottom">
@@ -134,7 +134,7 @@
         <div class="price-block agile">
           <div class="price-gd-top ">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ev22Lmu2ijo?rel=0"></iframe>
                     </div>
           </div>
           <div class="price-gd-bottom">
@@ -181,7 +181,7 @@
         <div class="price-block agile">
           <div class="price-gd-top">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gt3R3DQhPzU?rel=0"></iframe>
                     </div>
           </div>
           <div class="price-gd-bottom">
@@ -223,7 +223,7 @@
         <div class="price-block agile">
           <div class="price-gd-top">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SwjuuNNTxB8?rel=0"></iframe>
                     </div>
           </div>
           <div class="price-gd-bottom">
@@ -265,7 +265,7 @@
         <div class="price-block agile">
           <div class="price-gd-top">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EpGU-6J87H4?rel=0"></iframe>
                     </div>
           </div>
           <div class="price-gd-bottom">
@@ -307,7 +307,7 @@
         <div class="price-block agile">
           <div class="price-gd-top ">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/neyZBExOqB0?rel=0"></iframe>
                     </div>
           </div>
           <div class="price-gd-bottom">
@@ -354,7 +354,7 @@
         <div class="price-block agile">
           <div class="price-gd-top">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Rl8maoi5loY?rel=0"></iframe>
                     </div>
           </div>
           <div class="price-gd-bottom">
@@ -396,7 +396,7 @@
         <div class="price-block agile">
           <div class="price-gd-top">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F4mV5Eozlmg?rel=0"></iframe>
                     </div>
           </div>
           <div class="price-gd-bottom">
@@ -438,7 +438,7 @@
         <div class="price-block agile">
           <div class="price-gd-top">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/epVGNrY4vvw?rel=0"></iframe>
                     </div>
           </div>
           <div class="price-gd-bottom">
@@ -480,7 +480,7 @@
         <div class="price-block agile">
           <div class="price-gd-top ">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DDNycVTY9g0?rel=0"></iframe>
                     </div>
           </div>
           <div class="price-gd-bottom">
@@ -527,7 +527,7 @@
         <div class="price-block agile">
           <div class="price-gd-top">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/b6pSq2fYSEI?rel=0"></iframe>
                     </div>
           </div>
           <div class="price-gd-bottom">
