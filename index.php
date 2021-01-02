@@ -32,6 +32,8 @@ include('db.php');
     <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="css/embed-responsive.css" rel="stylesheet" />
+
     <!--//fonts-->
     <link rel="shortcut icon" href="images/favicon.png">
   </head>
