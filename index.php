@@ -146,6 +146,12 @@ $page = $_GET['page'];
 include "page/".$page.".php";
 }
 ?>
+<div class="copy">
+  <p>© 2021 ALFIRDAUSI. All Rights Reserved | Design by 
+    <a href="https://excellenz.id">Excellenz
+    </a> 
+  </p>
+</div>
     <!--/footer -->
     <!-- js -->
     <script type="text/javascript" src="js/jquery-2.1.4.min.js">

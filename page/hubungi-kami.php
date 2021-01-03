@@ -86,9 +86,3 @@ echo"OK";
   </div>
 </section>
 <!-- /contact -->
-<div class="copy">
-  <p>© 2021 ALFIRDAUSI. All Rights Reserved | Design by 
-    <a href="https://excellenz.id">Excellenz
-    </a> 
-  </p>
-</div>
