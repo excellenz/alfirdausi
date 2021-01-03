@@ -304,8 +304,8 @@
     </a>
   </div>
   <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g9.jpg" class="swipebox">
-      <img src="images/g9.jpg" class="img-responsive" alt="/">
+    <a href="images/gi.jpg" class="swipebox">
+      <img src="images/gi.jpg" class="img-responsive" alt="/">
       <div class="textbox">
         <h4>Alfirdausi
         </h4>
@@ -317,8 +317,8 @@
     </a>
   </div>
   <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g10.jpg" class="swipebox">
-      <img src="images/g10.jpg" class="img-responsive" alt="/">
+    <a href="images/gj.jpg" class="swipebox">
+      <img src="images/gj.jpg" class="img-responsive" alt="/">
       <div class="textbox">
         <h4>Alfirdausi
         </h4>
@@ -330,8 +330,8 @@
     </a>
   </div>
   <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g4.jpg" class="swipebox">
-      <img src="images/g4.jpg" class="img-responsive" alt="/">
+    <a href="images/gk.jpg" class="swipebox">
+      <img src="images/gk.jpg" class="img-responsive" alt="/">
       <div class="textbox">
         <h4>Alfirdausi
         </h4>
@@ -343,8 +343,8 @@
     </a>
   </div>
   <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/g2.jpg" class="swipebox">
-      <img src="images/g2.jpg" class="img-responsive" alt="/">
+    <a href="images/gl.jpg" class="swipebox">
+      <img src="images/gl.jpg" class="img-responsive" alt="/">
       <div class="textbox">
         <h4>Alfirdausi
         </h4>
