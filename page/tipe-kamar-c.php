@@ -10,35 +10,36 @@
         <ul class="slides">
           <li>
             <div class="w3layouts_work_grid_left">
-              <img src="images/5.jpg" alt=" " class="img-responsive" />
+              <img src="images/tipe-c.jpg" alt=" " class="img-responsive" />
               <div class="w3layouts_work_grid_left_pos">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eAaubSLUUVs?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XTZAAkrB7eM?rel=0"></iframe>
                     </div>
-                </div>
+              </div>
             </div>
             <div class="w3layouts_work_grid_right">
               <h4>
-                <i class="fa fa-star" aria-hidden="true">
-                </i>
-                <i class="fa fa-star" aria-hidden="true">
-                </i>
-                <i class="fa fa-star" aria-hidden="true">
-                </i>
-                <i class="fa fa-star" aria-hidden="true">
-                </i>
-                <i class="fa fa-star" aria-hidden="true">
-                </i>
-                Worth to come again
+                Deskripsi Kamar:
               </h4>
-              <p>Sed tempus vestibulum lacus blandit faucibus. 
-                Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-                at imperdiet urna. 
-              </p>
-              <h5>Julia Rose
-              </h5>
-              <p>Germany
-              </p>
+              <br>
+              <ul>
+                  <li> 2 Ranjang ukuran 160x200 cm</li>
+                  <li> 2 Springbed ukuran 160x200 cm</li>
+                  <li> Air Panas/Water Heater</li>
+                  <li> Air Conditioner / AC </li>
+                  <li> TV Flat 32'</li>
+                  <li> Kloset Duduk</li>
+                  <li> Shower</li>
+                  <li> Gratis Wifi</li>
+                  <li> Kamar Mandi dan Toilet di dalam</li>
+                  <li> Lokasi di Area HK di Lantai 1</li>
+                  <li> Non Breakfast</li>
+              </ul>
+              <h5>Jumlah Kamar Kosong : 1</h5>
+              <div class="agileits_w3layouts_more menu__item">
+                <a href="index.php?page=tipe-kamar" >Kembali</a>
+                <a href="admin/reservation.php" >Pesan</a>
+              </div>            
             </div>
             <div class="clearfix"> 
             </div>
