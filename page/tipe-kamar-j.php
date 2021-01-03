@@ -23,8 +23,8 @@
               </h4>
               <br>
               <ul>
-                  <li> 2 Ranjang ukuran 160x200 cm</li>
-                  <li> 2 Springbed ukuran 160x200 cm</li>
+                  <li> Satu ranjang  ukuran  200 x 180 plus extra bed</li>
+                  <li> 2 Springbed</li>
                   <li> Air Panas/Water Heater</li>
                   <li> Air Conditioner / AC </li>
                   <li> TV Flat 32'</li>
@@ -32,7 +32,7 @@
                   <li> Shower</li>
                   <li> Gratis Wifi</li>
                   <li> Kamar Mandi dan Toilet di dalam</li>
-                  <li> Lokasi di Area HK di Lantai 1</li>
+                  <li> Lokasi di Area HK di Lantai 3</li>
                   <li> Non Breakfast</li>
               </ul>
               <h5>Jumlah Kamar Kosong : 1</h5>

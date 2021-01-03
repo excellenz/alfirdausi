@@ -23,16 +23,17 @@
               </h4>
               <br>
               <ul>
-                  <li> 2 Ranjang ukuran 160x200 cm</li>
-                  <li> 2 Springbed ukuran 160x200 cm</li>
+                  <li> 1 Ranjang tingkat  dengan ukuran bawah 200 x 160 cm dan atas 200 x 140 cm</li>
+                  <li> 2 springbed ukuran 200 x 160 cm dan 200  x 140  cm</li>
                   <li> Air Panas/Water Heater</li>
                   <li> Air Conditioner / AC </li>
-                  <li> TV Flat 32'</li>
-                  <li> Kloset Duduk</li>
+                  <li> TV Flat 24'</li>
+                  <li> Kloset Jongkok</li>
                   <li> Shower</li>
                   <li> Gratis Wifi</li>
                   <li> Kamar Mandi dan Toilet di dalam</li>
-                  <li> Lokasi di Area HK di Lantai 1</li>
+                  <li> Dapur Kecil dan Kompor Gas</li>
+                  <li> Lokasi di Luar Area HK di Lantai 1</li>
                   <li> Non Breakfast</li>
               </ul>
               <h5>Jumlah Kamar Kosong : 1</h5>
