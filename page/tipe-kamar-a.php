@@ -10,9 +10,11 @@
         <ul class="slides">
           <li>
             <div class="w3layouts_work_grid_left">
-              <img src="images/5.jpg" alt=" " class="img-responsive" />
+              <img src="images/tipe-a.jpg" alt=" " class="img-responsive" />
               <div class="w3layouts_work_grid_left_pos">
-                <img src="images/c2.jpg" alt=" " class="img-responsive" />
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SdGb7p17u_U?rel=0"></iframe>
+                    </div>
               </div>
             </div>
             <div class="w3layouts_work_grid_right">
