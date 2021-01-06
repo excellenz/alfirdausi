@@ -265,8 +265,8 @@
     </a>
   </div>
   <div class="col-md-3 gallery-grid gallery1">
-    <a href="images/gf.jpg" class="swipebox">
-      <img src="images/gf.jpg" class="img-responsive" alt="/">
+    <a href="images/gg.jpg" class="swipebox">
+      <img src="images/gg.jpg" class="img-responsive" alt="/">
       <div class="textbox">
         <h4>Alfirdausi
         </h4>
@@ -372,9 +372,9 @@
         <ul class="slides">
           <li>
             <div class="w3layouts_work_grid_left">
-              <img src="images/5.jpg" alt=" " class="img-responsive" />
+              <img src="images/gl.jpg" alt=" " class="img-responsive" />
               <div class="w3layouts_work_grid_left_pos">
-                <img src="images/c4.jpg" alt=" " class="img-responsive" />
+                <img src="images/t1.png" alt=" " class="img-responsive" width=80%/>
               </div>
             </div>
             <div class="w3layouts_work_grid_right">
@@ -389,15 +389,13 @@
                 </i>
                 <i class="fa fa-star" aria-hidden="true">
                 </i>
-                Worth to come again
+                Penginapan Yang Nyaman, Bersih dengan Fasilitas AC, TV dan Air Hangat
               </h4>
-              <p>Sed tempus vestibulum lacus blandit faucibus. 
-                Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-                at imperdiet urna. 
+              <p>Penginapan keluarga yang dekat pondok Husnul Khotimah. Kamar yang nyaman dan bersih. Kamar mandi juga bersih, fasilitas AC, TV dan air hangat. Hawa sejuk karena berada di kaki gunung ciremai. 
               </p>
-              <h5>Julia Rose
+              <h5>Sheno J.S.
               </h5>
-              <p>Germany
+              <p>Indonesia
               </p>
             </div>
             <div class="clearfix"> 
@@ -405,9 +403,9 @@
           </li>
           <li>
             <div class="w3layouts_work_grid_left">
-              <img src="images/5.jpg" alt=" " class="img-responsive" />
+              <img src="images/gi.jpg" alt=" " class="img-responsive" />
               <div class="w3layouts_work_grid_left_pos">
-                <img src="images/c2.jpg" alt=" " class="img-responsive" />
+                <img src="images/t2.png" alt=" " class="img-responsive" width=80%/>
               </div>
             </div>
             <div class="w3layouts_work_grid_right">
@@ -420,17 +418,15 @@
                 </i>
                 <i class="fa fa-star" aria-hidden="true">
                 </i>
-                <i class="fa fa-star-o" aria-hidden="true">
+                <i class="fa fa-star" aria-hidden="true">
                 </i>
-                Worth to come again
+                The Best Lodge Near Husnul
               </h4>
-              <p>Sed tempus vestibulum lacus blandit faucibus. 
-                Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-                at imperdiet urna. 
+              <p>Penginapan mewah dengan harga miring ini menawarkan fasilitas lengkap berupa: internet nirkabel, pendingin ruangan, air panas, dapur mini hingga ruang parkir pribadi juga akses yang cepat ke toserba terdekat juga jaraknya yang terbilang cukup dekat dari pondok pesantren husnul khotimah kuningan. 
               </p>
-              <h5>Jahnatan Smith
+              <h5>Sultan, M.A.
               </h5>
-              <p>United States
+              <p>Indonesia
               </p>
             </div>
             <div class="clearfix"> 
@@ -438,9 +434,9 @@
           </li>
           <li>
             <div class="w3layouts_work_grid_left">
-              <img src="images/5.jpg" alt=" " class="img-responsive" />
+              <img src="images/gh.jpg" alt=" " class="img-responsive" />
               <div class="w3layouts_work_grid_left_pos">
-                <img src="images/c4.jpg" alt=" " class="img-responsive" />
+                <img src="images/t3.png" alt=" " class="img-responsive" width=80%/>
               </div>
             </div>
             <div class="w3layouts_work_grid_right">
@@ -453,17 +449,15 @@
                 </i>
                 <i class="fa fa-star" aria-hidden="true">
                 </i>
-                <i class="fa fa-star-o" aria-hidden="true">
+                <i class="fa fa-star" aria-hidden="true">
                 </i>
-                Worth to come again
+                Tempatnya bagus... saya Suka...
               </h4>
-              <p>Sed tempus vestibulum lacus blandit faucibus. 
-                Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-                at imperdiet urna. 
+              <p>Kalau ke Kuningan pas hari-hari besar lebih baik tinggal di sini.... murah dan fasilitas lengkap.. AC, shower air Panas ada... parkiran luas, aman dan nyaman. 
               </p>
-              <h5>Rosalind Cloer
+              <h5>Abdurrahman
               </h5>
-              <p>Italy
+              <p>Indonesia
               </p>
             </div>
             <div class="clearfix"> 
@@ -471,9 +465,9 @@
           </li>
           <li>
             <div class="w3layouts_work_grid_left">
-              <img src="images/2.jpg" alt=" " class="img-responsive" />
+              <img src="images/tipe-g.jpg" alt=" " class="img-responsive" />
               <div class="w3layouts_work_grid_left_pos">
-                <img src="images/c4.jpg" alt=" " class="img-responsive" />
+                <img src="images/t4.jpg" alt=" " class="img-responsive"/>
               </div>
             </div>
             <div class="w3layouts_work_grid_right">
@@ -484,19 +478,17 @@
                 </i>
                 <i class="fa fa-star" aria-hidden="true">
                 </i>
-                <i class="fa fa-star-o" aria-hidden="true">
+                <i class="fa fa-star" aria-hidden="true">
                 </i>
-                <i class="fa fa-star-o" aria-hidden="true">
+                <i class="fa fa-star" aria-hidden="true">
                 </i>
-                Worth to come again
+                Praktis, Terjangkau, Nyaman dan Lengkap
               </h4>
-              <p>Sed tempus vestibulum lacus blandit faucibus. 
-                Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-                at imperdiet urna. 
+              <p>Praktis, terjangkau, nyaman, fasilitas bagus (kamar mandi bersih, AC, wifi, tempat parkir luas) dekat dengan tujuan kunjungan yaitu menjenguk anak-anak yang sedang menempuh pendidikan di Husnul Khotimah Boarding school dan Al Multazam Boarding school. 
               </p>
-              <h5>Amie Bublitz
+              <h5>Willy Artho
               </h5>
-              <p>Switzerland
+              <p>Indonesia
               </p>
             </div>
             <div class="clearfix"> 
