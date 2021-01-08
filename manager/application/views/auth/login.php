@@ -10,10 +10,10 @@
       <form action="<?= base_url('auth'); ?>" method="post">
         <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
         <div class="input-group mb-3">
-          <input type="text" class="form-control" id="email" name="email"  placeholder="Enter email adress..." value="<?= set_value('email'); ?>">
+          <input type="text" class="form-control" id="email" name="email"  placeholder="Enter phone number..." value="<?= set_value('email'); ?>">
           <div class="input-group-append">
             <div class="input-group-text">
-              <i class="fas fa-envelope"></i>
+              <i class="fas fa-phone"></i>
             </div>
           </div>
         </div>

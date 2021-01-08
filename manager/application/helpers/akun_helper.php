@@ -50,3 +50,11 @@ function check_assignment($user_id, $group_id)
 		return "checked='checked'";
 	}
 }
+
+function rupiah($angka)
+{
+
+$hasil_rupiah = "Rp " . number_format($angka,2,',','.');
+return $hasil_rupiah;
+
+}
