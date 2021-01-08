@@ -25,6 +25,7 @@
         <div class="card-body">
           <div class="box-header">
             <h3 class="box-title">KAMAR NOMOR : <b><?= $kamar['nomor_kamar']; ?></b></h3>
+            <h3 class="box-title">KAMAR ID : <b><?= $kamar['id']; ?></b></h3>
           </div>
           <form action="" method="post">
             <div class="box-body">
@@ -124,7 +125,8 @@
               </div>
             </div>
             <div class="box-footer">
-              <input type="hidden" name="id_kamar" value="<?php echo $kamar_view['id_kamar']; ?>" />
+              <input type="hidden" name="id_kamar" value="<?php echo $kamar['id']; ?>" />
+              <input type="hidden" name="harga" value="<?php echo $kamar['harga']; ?>" />
               <button class="btn btn-success" type="submit" name="checkin">Check In</button>
               <a class="btn btn-warning" href="<?= base_url('layanan'); ?>">Batal</a>
             </div>
