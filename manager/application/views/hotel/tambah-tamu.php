@@ -49,7 +49,7 @@
                           <input class="form-control" name="nama_depan" placeholder="Nama Depan" required />
                         </div>
                         <div class="col-sm-4">
-                          <input class="form-control" name="nama_belakang" placeholder="Nama Belakang" required />
+                          <input class="form-control" name="nama_belakang" placeholder="Nama Belakang" />
                         </div>
                       </div>
                     </div>
@@ -72,7 +72,10 @@
                       <label>Warga Negara</label>
                       <div class="row">
                         <div class="col-sm-4">
-                          <input class="form-control" name="warga_negara" />
+                          <select class="form-control" name="warga_negara">
+                            <option value="WNI">WNI</option>
+                            <option value="WNA">WNA</option>
+                          </select>
                         </div>
                       </div>
                     </div>
@@ -95,8 +98,8 @@
                     <div class="form-group">
                       <div class="row">
                         <div class="col-sm-6">
-                          <label>No. Whatsapp (Tidak diawali 0)</label>
-                          <input class="form-control" name="nomor_telp" placeholder="Misal: 8123456789" required />
+                          <label>No. Whatsapp</label>
+                          <input class="form-control" name="nomor_telp" placeholder="Misal: 08123456789" required />
                         </div>
                         <div class="col-sm-6">
                           <label>Email(Opsional)</label>

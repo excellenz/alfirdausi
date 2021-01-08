@@ -41,7 +41,6 @@ class Hotel extends CI_Controller
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->form_validation->set_rules('nama_depan', 'Nama Depan', 'required|trim');
-		$this->form_validation->set_rules('nama_belakang', 'Nama Belakang', 'required|trim');
 		$this->form_validation->set_rules('nomor_identitas', 'Nomor Identitas', 'required|trim');
 		$this->form_validation->set_rules('warga_negara', 'Warga Negara', 'required|trim');
 		$this->form_validation->set_rules('alamat_provinsi', 'Provinsi', 'required|trim');
@@ -58,7 +57,7 @@ class Hotel extends CI_Controller
 			$this->load->view('templates/footer');
 		
 		} else {
-			$nomor_telp = '62' . $this->input->post('nomor_telp', true);
+			$nomor_telp = '62' . substr($this->input->post('nomor_telp', true),1);
 			$data = [
 						'prefix' => $this->input->post('prefix'),
 						'nama_depan' => $this->input->post('nama_depan'),
@@ -87,7 +86,6 @@ class Hotel extends CI_Controller
 		$data['tamu'] = $this->db->get_where('hotel_tamu', ['id' => $id])->row_array();
 
 		$this->form_validation->set_rules('nama_depan', 'Nama Depan', 'required|trim');
-		$this->form_validation->set_rules('nama_belakang', 'Nama Belakang', 'required|trim');
 		$this->form_validation->set_rules('nomor_identitas', 'Nomor Identitas', 'required|trim');
 		$this->form_validation->set_rules('warga_negara', 'Warga Negara', 'required|trim');
 		$this->form_validation->set_rules('alamat_provinsi', 'Provinsi', 'required|trim');
@@ -104,7 +102,7 @@ class Hotel extends CI_Controller
 			$this->load->view('templates/footer');
 		
 		} else {
-			$nomor_telp = '62' . $this->input->post('nomor_telp', true);
+			$nomor_telp = '62' . substr($this->input->post('nomor_telp', true),1);
 			$data = [
 						'prefix' => $this->input->post('prefix'),
 						'nama_depan' => $this->input->post('nama_depan'),

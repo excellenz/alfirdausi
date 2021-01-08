@@ -56,6 +56,8 @@
                   <td>
                     <?php if ($b['status'] == 1) : ?>
                       <span class="btn btn-xs btn-success"><i class="fas fa-check"></i></span>
+                    <?php elseif ($b['status'] == 2) : ?>
+                      <span class="btn btn-xs btn-warning"><i class="far fa-circle text-white"></i></span>
                     <?php else : ?>
                       <span class="btn btn-xs btn-danger"><i class="fas fa-times"></i></span>
                     <?php endif; ?>
