@@ -54,7 +54,7 @@ function check_assignment($user_id, $group_id)
 function rupiah($angka)
 {
 
-$hasil_rupiah = "Rp " . number_format($angka,2,',','.');
+$hasil_rupiah = "Rp " . number_format($angka,0,',','.');
 return $hasil_rupiah;
 
 }

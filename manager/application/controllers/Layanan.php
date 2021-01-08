@@ -11,6 +11,23 @@ class Layanan extends CI_Controller
 
 	public function index()
 	{
+		$data['title'] = 'Daftar Booking Kamar';
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$this->db->select('*');
+		$this->db->from('hotel_kamar');
+		$this->db->join('hotel_booking', 'hotel_booking.hotel_kamar_id = hotel_kamar.id');
+		$this->db->join('hotel_tamu', 'hotel_booking.hotel_tamu_id = hotel_tamu.id');
+		$data['booking'] = $this->db->get()->result_array();
+		
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/topbar', $data);
+		$this->load->view('templates/sidebar', $data);
+		$this->load->view('room/index', $data);
+		$this->load->view('templates/footer');
+	}
+
+	public function book()
+	{
 		$data['title'] = 'Booking Kamar';
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
@@ -24,11 +41,29 @@ class Layanan extends CI_Controller
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/topbar', $data);
 		$this->load->view('templates/sidebar', $data);
-		$this->load->view('room/index', $data);
+		$this->load->view('room/book', $data);
 		$this->load->view('templates/footer');
 	}
 
-	public function book($id)
+	public function bookDetail($id)
+	{
+		$data['title'] = 'Detail Pemesanan';
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$this->db->select('*');
+		$this->db->from('hotel_kamar');
+		$this->db->join('hotel_booking', 'hotel_booking.hotel_kamar_id = hotel_kamar.id');
+		$this->db->join('hotel_tamu', 'hotel_booking.hotel_tamu_id = hotel_tamu.id');
+		$this->db->where('hotel_booking.id_book', $id);
+		$data['booking'] = $this->db->get()->row_array();
+		
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/topbar', $data);
+		$this->load->view('templates/sidebar', $data);
+		$this->load->view('room/book-detail', $data);
+		$this->load->view('templates/footer');
+	}
+
+	public function addBook($id)
 	{
 		$data['title'] = 'Booking Kamar';
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
@@ -47,7 +82,7 @@ class Layanan extends CI_Controller
 			$this->load->view('templates/header', $data);
 			$this->load->view('templates/topbar', $data);
 			$this->load->view('templates/sidebar', $data);
-			$this->load->view('room/book', $data);
+			$this->load->view('room/add-book', $data);
 			$this->load->view('templates/footer');
 		} else {
 			$c_in = strtotime($this->input->post('tgl_cin'));
@@ -73,6 +108,24 @@ class Layanan extends CI_Controller
 			redirect('layanan');
 		}
 
+	}
+
+	public function verBook($id)
+	{
+		
+		$this->db->set('status', 1);
+		$this->db->where('id_book', $id);
+		$this->db->update('hotel_booking');
+		$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Pembayaran berhasil diverifikasi!</div>');
+		redirect('layanan');
+	}
+
+	public function hapusbook($id)
+	{
+		
+		$this->db->delete('hotel_booking', ['id_book' => $id]);
+		$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Data berhasil dihapus!</div>');
+		redirect('layanan');
 	}
 
 }
