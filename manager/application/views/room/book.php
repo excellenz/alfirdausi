@@ -25,6 +25,7 @@
         <div class="card-body">
           <div class="box-header">
             <h3 class="box-title">KAMAR NOMOR : <b><?= $kamar['nomor_kamar']; ?></b></h3>
+            <h3 class="box-title">KAMAR ID : <b><?= $kamar['id']; ?></b></h3>
           </div>
           <form action="" method="post">
             <div class="box-body">
@@ -35,7 +36,7 @@
                     <input class="form-control" name="nomor_invoice" value="<?php echo $nomor_invoice; ?>" />
                   </div>
                   <div class="alert alert-info">
-                    <h4><?= $kamar['tipe']; ?></h4>
+                    <h4>Tipe Kamar : <?= $kamar['tipe']; ?></h4>
                     <ul class="list-unstyled">
                       <li>Harga / Malam : <b>Rp <?= rupiah($kamar['harga']); ?></b></li>
                       <li>Lokasi : <b><?= $kamar['hk'] == 0 ? 'Luar Area Husnul Khotimah' : 'Dalam Area Husnul Khotimah'; ?></b></li>
@@ -124,7 +125,8 @@
               </div>
             </div>
             <div class="box-footer">
-              <!-- <input type="hidden" name="id_kamar" value="<?php echo $kamar_view['id_kamar']; ?>" /> -->
+              <input type="hidden" name="id_kamar" value="<?php echo $kamar['id']; ?>" />
+              <input type="hidden" name="harga" value="<?php echo $kamar['harga']; ?>" />
               <button class="btn btn-success" type="submit" name="checkin">Check In</button>
               <a class="btn btn-warning" href="<?= base_url('layanan'); ?>">Batal</a>
             </div>
