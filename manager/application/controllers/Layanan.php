@@ -40,11 +40,39 @@ class Layanan extends CI_Controller
 		$data['kamar'] = $this->db->get()->row_array();
 		$data['tamu'] = $this->db->get('hotel_tamu')->result_array();
 
-		$this->load->view('templates/header', $data);
-		$this->load->view('templates/topbar', $data);
-		$this->load->view('templates/sidebar', $data);
-		$this->load->view('room/book', $data);
-		$this->load->view('templates/footer');
+		$this->form_validation->set_rules('tgl_cin', 'Tanggal Check in', 'required|trim');
+		$this->form_validation->set_rules('tgl_cout', 'Tanggal Check out', 'required|trim');
+
+		if ($this->form_validation->run() == false) {
+			$this->load->view('templates/header', $data);
+			$this->load->view('templates/topbar', $data);
+			$this->load->view('templates/sidebar', $data);
+			$this->load->view('room/book', $data);
+			$this->load->view('templates/footer');
+		} else {
+			$c_in = strtotime($this->input->post('tgl_cin'));
+			$c_out = strtotime($this->input->post('tgl_cout'));
+			$selisih = ($c_out - $c_in)/86400;
+			$harga = $this->input->post('harga');
+			$biaya = $selisih * $harga;
+			$data = [
+				'tgl_inv' => time(),
+				'no_invoice' => $this->input->post('nomor_invoice'),
+				'hotel_tamu_id' => $this->input->post('id_tamu'),
+				'hotel_kamar_id' => $this->input->post('id_kamar'),
+				'jml_dewasa' => $this->input->post('jumlah_dewasa'),
+				'jml_anak' => $this->input->post('jumlah_anak'),
+				'tgl_c_in' => $c_in,
+				'tgl_c_out' => $c_out,
+				'biaya' => $biaya,
+				'status' => 1,
+			];
+
+			$this->db->insert('hotel_booking', $data);
+			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Data berhasil ditambahkan.</div>');
+			redirect('layanan');
+		}
+
 	}
 
 }

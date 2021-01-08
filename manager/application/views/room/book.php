@@ -27,13 +27,13 @@
             <h3 class="box-title">KAMAR NOMOR : <b><?= $kamar['nomor_kamar']; ?></b></h3>
             <h3 class="box-title">KAMAR ID : <b><?= $kamar['id']; ?></b></h3>
           </div>
-          <form action="" method="post">
+          <form action="<?= base_url('layanan/book/') . $kamar['id']; ?>" method="post">
             <div class="box-body">
               <div class="row">
                 <div class="col-sm-3">
                   <div class="form-group">
                     <label># INVOICE</label>
-                    <input class="form-control" name="nomor_invoice" value="<?php echo $nomor_invoice; ?>" />
+                    <input class="form-control" name="nomor_invoice" value="<?php echo $nomor_invoice; ?>" readonly/>
                   </div>
                   <div class="alert alert-info">
                     <h4>Tipe Kamar : <?= $kamar['tipe']; ?></h4>
@@ -47,7 +47,7 @@
                   <div class="form-group">
                     <label>Nama Tamu</label>
                     <select class="form-control nama_tamu" name="id_tamu">
-                      <option selected="selected">--Pilih--</option>
+                      <option selected="0">--Pilih--</option>
                       <?php foreach($tamu as $tamu) { ?>
                       <option value="<?php echo $tamu['id']; ?>">
                         <?php echo $tamu['prefix'].'. '.$tamu['nama_depan'].'&nbsp;'.$tamu['nama_belakang']; ?>
