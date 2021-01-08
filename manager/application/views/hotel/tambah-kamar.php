@@ -50,7 +50,7 @@
                     <div class="form-group">
                       <label>Status</label>
                       <select class="form-control" name="status">
-                        <option value="1">Tersedia</option>
+                        <option value="1">Kosong</option>
                         <option value="0">Terisi</option>
                         <option value="2">Kotor</option>
                       </select>

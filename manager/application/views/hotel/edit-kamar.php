@@ -60,7 +60,7 @@
                             $status_kamar = 'Kotor';
                           }
 
-                          echo '<option value="' . $status['kamar'] . '">' . $status_kamar . '</option>';
+                          echo '<option value="' . $kamar['status'] . '">' . $status_kamar . '</option>';
                         ?>
                         <option value="1">Kosong</option>
                         <option value="0">Terisi</option>
