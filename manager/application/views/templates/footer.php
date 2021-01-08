@@ -77,11 +77,11 @@
 
     //Date range picker
     $('#reservationdate').datetimepicker({
-        format: 'L'
+        format: 'YYYY/MM/DD'
     });
 
     $('#checkoutdate').datetimepicker({
-        format: 'L'
+        format: 'YYYY/MM/DD'
     });
     //Date range picker
     $('#reservation').daterangepicker()
