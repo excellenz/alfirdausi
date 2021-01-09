@@ -25,7 +25,7 @@
         <div class="card-body">
           <div class="box-header">
             <?= $this->session->flashdata('message'); ?>
-            <a class="btn btn-info mb-3" href="<?= base_url('layanan/book') ?>">Booking Kamar</a>
+            <a class="btn btn-info mb-3" href="<?= base_url('user/book') ?>">Booking Kamar</a>
           </div>
           <div class="box-body">
             <table class="table table-striped table-hover table-responsive">
@@ -51,7 +51,7 @@
                   <td><?= date('d-M-Y', $b['tgl_inv']); ?></td>
                   <td><?= $b['nama_depan'] . ' ' . $b['nama_belakang']; ?></td>
                   <td><?= $b['nomor_kamar']; ?></td>
-                  <td><?= date('d-M-Y', $b['tgl_c_in']); ?></td>
+                  <td><?= date('d-m-Y', $b['tgl_c_in']); ?></td>
                   <td><?= rupiah($b['biaya']); ?></td>
                   <td>
                     <?php if ($b['status'] == 1) : ?>
@@ -63,8 +63,7 @@
                     <?php endif; ?>
                   </td>
                   <td>
-                    <a href="<?= base_url('layanan/bookdetail/') . $b['id_book']; ?>" class="badge badge-info">detail</a>
-                    <a href="javascript:hapusData(<?= $b['id_book']; ?>)" class="badge badge-danger">hapus</a>
+                    <a href="<?= base_url('user/bookdetail/') . $b['id_book']; ?>" class="badge badge-info">detail</a>
                   </td>
                 </tr>
                 <?php
@@ -80,11 +79,3 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
-<script language="JavaScript" type="text/javascript">
-  function hapusData(id){
-    if (confirm("Apakah anda yakin akan menghapus data ini?")){
-        window.location.href = 'layanan/hapusbook/' + id;
-    }
-  }
-</script>

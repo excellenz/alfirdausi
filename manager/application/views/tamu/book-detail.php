@@ -29,6 +29,21 @@
           <div class="box-body">
             <div class="row">
               <div class="col-sm-5">
+                <?php if ($booking['status'] == 0) : ?>
+                <div class="alert alert-warning" role="alert">Silahkan lakukan pembayaran maksimal 1 x 24 Jam dari tanggal booking.
+                Silahkan transfer ke salah satu Bank berikut:
+                <ul>
+                  <b>
+                    <li>Bank Mandiri : 1340005757280</li>
+                    <li>Bank BCA : 2990250793</li>
+                    <li>Bank BRI : 427601013095536</li>
+                    <li>Bank Muamalat : 1320001779</li>
+                    <li>Bank BNI : 0569599595</li>
+                  </b>
+                </ul>
+                Semuanya atas nama <b>SUPENO</b>
+                </div>
+                <?php endif; ?>
                 <table class="table col-sm table-striped table-hover">
                   <tbody>
                     <tr>
@@ -88,9 +103,9 @@
             </div>
           </div>
           <div class="box-footer">
-            <a class="btn btn-secondary mb-3" href="<?= base_url('layanan') ?>">Kembali</a>
-            <?php if ($booking['status'] != 1) : ?>
-              <a class="btn btn-success mb-3" href="javascript:verData(<?= $booking['id_book']; ?>)">Lunas</a>
+            <a class="btn btn-secondary mb-3" href="<?= base_url('user/viewbook'); ?>">Kembali</a>
+            <?php if ($booking['status'] == 0) : ?>
+              <a class="btn btn-success mb-3" href="<?= base_url('user/konfbook/') . $booking['id_book']; ?>">Konfirmasi Transfer</a>
             <?php endif; ?>
           </div>
         </div>
