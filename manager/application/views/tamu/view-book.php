@@ -37,8 +37,8 @@
                   <th>No. kamar</th>
                   <th>Check in</th>
                   <th>Biaya</th>
-                  <th>Status</th>
-                  <th>Action</th>
+                  <th>Status Pesanan</th>
+                  <th>Rincian Pesanan</th>
                 </tr>
               </thead>
               <tbody>
@@ -63,7 +63,7 @@
                     <?php endif; ?>
                   </td>
                   <td>
-                    <a href="<?= base_url('user/bookdetail/') . $b['id_book']; ?>" class="badge badge-info">detail</a>
+                    <a href="<?= base_url('user/bookdetail/') . $b['id_book']; ?>" class="badge badge-info">lihat</a>
                   </td>
                 </tr>
                 <?php

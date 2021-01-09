@@ -48,7 +48,7 @@ class Auth extends CI_Controller
 						'role_id' => $user['role_id']
 					];
 					$this->session->set_userdata($data);
-					redirect('user');
+					redirect('user/viewbook');
 				} else {
 					$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Wrong password!</div>');
 			redirect('tamu/auth');

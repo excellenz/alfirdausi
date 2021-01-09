@@ -39,7 +39,7 @@
               <h5>Jumlah Kamar Kosong : 1</h5>
               <div class="agileits_w3layouts_more menu__item">
                 <a href="index.php?page=tipe-kamar" >Kembali</a>
-                <a href="admin/reservation.php" >Pesan</a>
+                <a href="manager/tamu/" >Pesan</a>
               </div>            
             </div>
             <div class="clearfix"> 
