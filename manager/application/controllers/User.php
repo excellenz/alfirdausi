@@ -319,6 +319,10 @@ class User extends CI_Controller
 		$this->db->where('hotel_booking.id_book', $id);
 		$data['booking'] = $this->db->get()->row_array();
 
+		if ($data['booking']['status'] > 0) {
+			redirect('user/viewbook');
+		}
+
 		$this->form_validation->set_rules('nama_depan', 'Nama Tamu', 'required|trim');
 
 		if($this->form_validation->run() == false) {
@@ -360,7 +364,7 @@ class User extends CI_Controller
 			$this->db->insert('hotel_bukti_transfer', $data);
 
 			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Konfirmasi pembayaran terkirim. Menunggu verifikasi admin.</div>');
-			redirect('user/viewbook');
+			redirect('https://wa.me/62895320490635?text=Saya sudah melakukan pembayaran untuk booking kamar. Mohon dikonfirmasi.');
 		}
 	}
 

@@ -28,6 +28,13 @@
             <a class="btn btn-info mb-3" href="<?= base_url('user/book') ?>">Booking Kamar</a>
           </div>
           <div class="box-body">
+            <?php 
+              if ($booking == NULL) : 
+            ?>
+            <div class="alert alert-warning" role="alert">
+              Anda belum melakukan pemesanan kamar. Silahkan klik tombol Booking Kamar untuk melakukan pemesanan.
+            </div>
+            <?php else : ?>
             <table class="table table-striped table-hover table-responsive">
               <thead>
                 <tr>
@@ -72,6 +79,7 @@
                   ?>
               </tbody>
             </table>
+            <?php endif; ?>
           </div>
         </div>
       </div>
