@@ -193,6 +193,18 @@
   </div>
 </div>
 <!--//sevices-->
+<!-- //Modal1 -->
+<div id="availability-agileits">
+  <div class="col-md-12 book-form-left-w3layouts">
+    <a href="index.php?page=tipe-kamar">
+      <h2>TIPE KAMAR ALFIRDAUSI
+      </h2>
+    </a>
+  </div>
+  <div class="clearfix"> 
+  </div>
+</div>
+
 <!-- Gallery -->
 <br>
 <br>

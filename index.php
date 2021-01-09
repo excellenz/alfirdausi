@@ -131,6 +131,10 @@ include('db.php');
                   <a href="index.php?page=hubungi-kami" >Hubungi Kami
                   </a>
                 </li>
+                <li class="menu__item">
+                  <a href="manager" >Manager
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
