@@ -34,7 +34,7 @@ $config['base_url'] = $root;
 | Index File
 |--------------------------------------------------------------------------
 |
-| Typically this will be your index.php file, unless you've renamed it to
+| Typically this will be your index.php file, unless you've renamed it topath
 | something else. If you are using mod_rewrite to remove the page set this
 | variable so that it is blank.
 |
@@ -381,13 +381,14 @@ $config['encryption_key'] = '';
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
 */
-$config['sess_driver'] = 'files';
+$config['sess_driver'] = 'database';
 $config['sess_cookie_name'] = 'ci_session';
-$config['sess_expiration'] = 7200;
-$config['sess_save_path'] = NULL;
+$config['sess_expiration'] = 0; //Sessi hilang selama browser tidak ditutup
+$config['sess_save_path'] = 'ci_sessions';
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
+$config['sess_table_name'] = 'ci_sessions';
 
 /*
 |--------------------------------------------------------------------------
