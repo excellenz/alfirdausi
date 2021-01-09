@@ -79,7 +79,7 @@
 <!-- //Modal1 -->
 <div id="availability-agileits">
   <div class="col-md-12 book-form-left-w3layouts">
-    <a href="admin/reservation.php">
+    <a href="manager/tamu">
       <h2>BOOKING KAMAR SEKARANG
       </h2>
     </a>
