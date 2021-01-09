@@ -51,7 +51,7 @@
                   <td><?= date('d-M-Y', $b['tgl_inv']); ?></td>
                   <td><?= $b['nama_depan'] . ' ' . $b['nama_belakang']; ?></td>
                   <td><?= $b['nomor_kamar']; ?></td>
-                  <td><?= date('d-m-Y', $b['tgl_c_in']); ?></td>
+                  <td><?= date('d-M-Y', $b['tgl_c_in']); ?></td>
                   <td><?= rupiah($b['biaya']); ?></td>
                   <td>
                     <?php if ($b['status'] == 1) : ?>

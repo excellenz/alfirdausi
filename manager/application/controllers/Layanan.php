@@ -55,6 +55,8 @@ class Layanan extends CI_Controller
 		$this->db->join('hotel_tamu', 'hotel_booking.hotel_tamu_id = hotel_tamu.id');
 		$this->db->where('hotel_booking.id_book', $id);
 		$data['booking'] = $this->db->get()->row_array();
+
+		$data['bukti'] = $this->db->get_where('hotel_bukti_transfer', ['hotel_booking_id' => $id])->row_array();
 		
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/topbar', $data);
@@ -90,6 +92,9 @@ class Layanan extends CI_Controller
 			$selisih = ($c_out - $c_in)/86400;
 			$harga = $this->input->post('harga');
 			$biaya = $selisih * $harga;
+			$databook = $this->db->get_where('hotel_booking', ['tgl_c_in' => $c_in, 'hotel_kamar_id' => $this->input->post('id_kamar')])->row_array();
+
+			if ($databook == NULL) {				
 			$data = [
 				'tgl_inv' => time(),
 				'no_invoice' => $this->input->post('nomor_invoice'),
@@ -106,6 +111,11 @@ class Layanan extends CI_Controller
 			$this->db->insert('hotel_booking', $data);
 			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Data berhasil ditambahkan.</div>');
 			redirect('layanan');
+			} else {
+				$this->session->set_flashdata('message', '<div class="alert alert-warning" role="alert"> Kamar sudah dipesan pada tanggal tersebut.
+					Silahkan pilih kamar yang lain atau ubah tanggal.</div>');
+				redirect('layanan');
+			}
 		}
 
 	}

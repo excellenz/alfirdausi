@@ -183,29 +183,6 @@ class User extends CI_Controller
 		redirect("user/upload/$no");
 	}
 
-	public function file_check()
-	{
-        $allowed_type_file = array('application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen', 'application/pdf', 'application/vnd.ms-powerpoint', 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-        $mime = get_mime_by_extension($_FILES['file']['name']);
-
-        if (isset($_FILES['file']['name']) && $_FILES['file']['name'] != "") {
-            if (in_array($mime, $allowed_type_file)) {
-                if ($_FILES['file']['size'] > 6144000) {
-                    $this->form_validation->set_message('file_check', 'Ukuran file terlalu besar! Pastikan kurang dari 5MB!');
-                    return FALSE;
-                } else {
-                return TRUE;                    
-                }
-            } else {
-                $this->form_validation->set_message('file_check', 'Jenis file tidak diizinkan!');
-                return FALSE;
-            }
-        } else {
-            $this->form_validation->set_message('file_check', 'Pilih file untuk diupload!');
-                return FALSE;
-        }
-    }
-
     // Fitur tamu hotel
     public function viewBook()
 	{
@@ -256,6 +233,8 @@ class User extends CI_Controller
 		$this->db->join('hotel_tamu', 'hotel_booking.hotel_tamu_id = hotel_tamu.id');
 		$this->db->where('hotel_booking.id_book', $id);
 		$data['booking'] = $this->db->get()->row_array();
+
+		$data['bukti'] = $this->db->get_where('hotel_bukti_transfer', ['hotel_booking_id' => $id])->row_array();
 		
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/topbar', $data);
@@ -292,22 +271,30 @@ class User extends CI_Controller
 			$selisih = ($c_out - $c_in)/86400;
 			$harga = $this->input->post('harga');
 			$biaya = $selisih * $harga;
-			$data = [
-				'tgl_inv' => time(),
-				'no_invoice' => $this->input->post('nomor_invoice'),
-				'hotel_tamu_id' => $this->input->post('id_tamu'),
-				'hotel_kamar_id' => $this->input->post('id_kamar'),
-				'jml_dewasa' => $this->input->post('jumlah_dewasa'),
-				'jml_anak' => $this->input->post('jumlah_anak'),
-				'tgl_c_in' => $c_in,
-				'tgl_c_out' => $c_out,
-				'biaya' => $biaya,
-				'status' => 0,
-			];
+			$databook = $this->db->get_where('hotel_booking', ['tgl_c_in' => $c_in, 'hotel_kamar_id' => $this->input->post('id_kamar')])->row_array();
 
-			$this->db->insert('hotel_booking', $data);
-			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Data berhasil ditambahkan.</div>');
-			redirect('user/viewbook');
+			if ($databook == NULL) {
+				$data = [
+					'tgl_inv' => time(),
+					'no_invoice' => $this->input->post('nomor_invoice'),
+					'hotel_tamu_id' => $this->input->post('id_tamu'),
+					'hotel_kamar_id' => $this->input->post('id_kamar'),
+					'jml_dewasa' => $this->input->post('jumlah_dewasa'),
+					'jml_anak' => $this->input->post('jumlah_anak'),
+					'tgl_c_in' => $c_in,
+					'tgl_c_out' => $c_out,
+					'biaya' => $biaya,
+					'status' => 0,
+				];
+
+				$this->db->insert('hotel_booking', $data);
+				$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Pesanan berhasil dibuat. Silahkan lakukan pembayaran. Lihat detail pesanan di bawah ini.</div>');
+				redirect('user/viewbook');
+			} else {
+				$this->session->set_flashdata('message', '<div class="alert alert-warning" role="alert"> Kamar sudah dipesan pada tanggal tersebut.
+					Silahkan pilih kamar yang lain atau ubah tanggal.</div>');
+				redirect('user/viewbook');
+			}
 		}
 
 	}
@@ -322,7 +309,7 @@ class User extends CI_Controller
 
 	public function konfBook($id)
 	{
-		$data['title'] = 'Edit Profile';
+		$data['title'] = 'Konfirmasi Transfer';
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->db->select('*');
@@ -332,7 +319,7 @@ class User extends CI_Controller
 		$this->db->where('hotel_booking.id_book', $id);
 		$data['booking'] = $this->db->get()->row_array();
 
-		$this->form_validation->set_rules('name', 'Full Name', 'required|trim');
+		$this->form_validation->set_rules('nama_depan', 'Nama Tamu', 'required|trim');
 
 		if($this->form_validation->run() == false) {
 			$this->load->view('templates/header', $data);
@@ -341,8 +328,8 @@ class User extends CI_Controller
 			$this->load->view('tamu/konfirmasi', $data);
 			$this->load->view('templates/footer');
 		} else {
-			$name = $this->input->post('name');
-			$email = $this->input->post('email');
+			$booking_id = $this->input->post('booking_id');
+			$nama_depan = $this->input->post('nama_depan');
 
 			// cek jika ada gambar (file) yang akan diupload
 			$upload_image = $_FILES['image']['name'];
@@ -350,34 +337,55 @@ class User extends CI_Controller
 			if ($upload_image) {
 				$config['allowed_types'] = 'gif|jpg|png';
 				$config['max_size']      = '2048';
-				$config['upload_path']   = './assets/img/profile/';
+				$config['upload_path']   = './assets/img/buktitrf/';
 
 				$this->load->library('upload', $config);
 
 				if ($this->upload->do_upload('image')) {
-					// cek dulu gambar lamanya apakah default
-					$old_image = $data['user']['image'];
-					if ( $old_image != 'default.jpg') {
-						// jika bukan, maka hapus saja agar tidak terjadi penumpukan file
-						unlink(FCPATH . 'assets/img/profile/' . $old_image);
-					}
-
-					$new_image = $this->upload->data('file_name');
-					$this->db->set('image', $new_image);
+					$gambar = $this->upload->data('file_name');
 				} else {
 					echo $this->upload->display_errors();
 				}
 			}
 
-			$this->db->set('date_modified', time());
-			$this->db->set('name', $name);
-			$this->db->where('email', $email);
-			$this->db->update('user');
+			$data = [
+				  'hotel_booking_id' => $booking_id,
+				  'foto_trf' => $gambar
+			];
 
-			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Your profile has been updated!</div>');
-			redirect('user');
+			$this->db->set('status', 2);
+			$this->db->where('id_book', $booking_id);
+			$this->db->update('hotel_booking');
+
+			$this->db->insert('hotel_bukti_transfer', $data);
+
+			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Konfirmasi pembayaran terkirim. Menunggu verifikasi admin.</div>');
+			redirect('user/viewbook');
 		}
 	}
+
+	public function file_check()
+	{
+        $allowed_type_file = array('application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen', 'application/pdf', 'application/vnd.ms-powerpoint', 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+        $mime = get_mime_by_extension($_FILES['file']['name']);
+
+        if (isset($_FILES['file']['name']) && $_FILES['file']['name'] != "") {
+            if (in_array($mime, $allowed_type_file)) {
+                if ($_FILES['file']['size'] > 6144000) {
+                    $this->form_validation->set_message('file_check', 'Ukuran file terlalu besar! Pastikan kurang dari 5MB!');
+                    return FALSE;
+                } else {
+                return TRUE;                    
+                }
+            } else {
+                $this->form_validation->set_message('file_check', 'Jenis file tidak diizinkan!');
+                return FALSE;
+            }
+        } else {
+            $this->form_validation->set_message('file_check', 'Pilih file untuk diupload!');
+                return FALSE;
+        }
+    }
 
     public function changePassword()
 	{

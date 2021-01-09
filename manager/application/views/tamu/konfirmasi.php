@@ -28,13 +28,13 @@
 				<div class="form-group row">
 					<label for="email" class="col-sm-4 col-form-label">Nomor Invoice</label>
 					<div class="col-sm-8">
-						<input type="text" class="form-control" id="email" name="email" value="<?= $booking['no_invoice']; ?>" readonly>
+						<input type="text" class="form-control" id="email" name="no_invoice" value="<?= $booking['no_invoice']; ?>" readonly>
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="name" class="col-sm-4 col-form-label">Nama Tamu</label>
 					<div class="col-sm-8">
-						<input type="text" class="form-control" id="name" name="name" value="<?= $user['name']; ?>">
+						<input type="text" class="form-control" id="name" name="nama_depan" value="<?= $booking['nama_depan']; ?>" readonly>
 						<?= form_error('name', '<small class="text-danger pl-3">', '</small>'); ?>
 					</div>
 				</div>
@@ -49,6 +49,7 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-10">
+						<input type="hidden" class="custom-file-input" id="booking_id" name="booking_id" value="<?= $booking['id_book']; ?>">
 						<button type="submit" class="btn btn-info">Upload</button>
 					</div>
 				</div>

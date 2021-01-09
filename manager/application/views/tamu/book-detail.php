@@ -95,6 +95,11 @@
                   </tbody>
                 </table>
               </div>
+              <?php if ($booking['status'] == 2) : ?>
+              <div class="col-sm-5">
+                <img src="<?= base_url('assets/img/buktitrf/') . $bukti['foto_trf']; ?>" class="img-thumbnail">
+              </div>
+              <?php endif; ?>
             </div>
           </div>
           <div class="box-footer">

@@ -64,7 +64,6 @@
                   </td>
                   <td>
                     <a href="<?= base_url('user/bookdetail/') . $b['id_book']; ?>" class="badge badge-info">detail</a>
-                    <a href="javascript:hapusData(<?= $b['id_book']; ?>)" class="badge badge-danger">hapus</a>
                   </td>
                 </tr>
                 <?php
@@ -80,11 +79,3 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
-<script language="JavaScript" type="text/javascript">
-  function hapusData(id){
-    if (confirm("Apakah anda yakin akan menghapus data ini?")){
-        window.location.href = 'user/hapusbook/' + id;
-    }
-  }
-</script>
