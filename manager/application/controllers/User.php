@@ -223,8 +223,160 @@ class User extends CI_Controller
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/topbar', $data);
 		$this->load->view('templates/sidebar', $data);
-		$this->load->view('room/index', $data);
+		$this->load->view('tamu/view-book', $data);
 		$this->load->view('templates/footer');
+	}
+
+	public function book()
+	{
+		$data['title'] = 'Booking Kamar';
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+		$this->db->select('*');
+		$this->db->from('hotel_tipe_kamar');
+		$this->db->join('hotel_kamar', 'hotel_kamar.tipe_kamar_id = hotel_tipe_kamar.id');
+		$this->db->where('hotel_kamar.status', 1);
+		$this->db->order_by('hotel_kamar.tipe_kamar_id', 'ASC');
+		$data['kamar'] = $this->db->get()->result_array();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/topbar', $data);
+		$this->load->view('templates/sidebar', $data);
+		$this->load->view('tamu/book', $data);
+		$this->load->view('templates/footer');
+	}
+
+	public function bookDetail($id)
+	{
+		$data['title'] = 'Detail Pemesanan';
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$this->db->select('*');
+		$this->db->from('hotel_kamar');
+		$this->db->join('hotel_booking', 'hotel_booking.hotel_kamar_id = hotel_kamar.id');
+		$this->db->join('hotel_tamu', 'hotel_booking.hotel_tamu_id = hotel_tamu.id');
+		$this->db->where('hotel_booking.id_book', $id);
+		$data['booking'] = $this->db->get()->row_array();
+		
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/topbar', $data);
+		$this->load->view('templates/sidebar', $data);
+		$this->load->view('tamu/book-detail', $data);
+		$this->load->view('templates/footer');
+	}
+
+	public function addBook($id)
+	{
+		$data['title'] = 'Booking Kamar';
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$nomor_telp = 62 . substr($data['user']['email'], 1);
+
+		$this->db->select('*');
+		$this->db->from('hotel_tipe_kamar');
+		$this->db->join('hotel_kamar', 'hotel_kamar.tipe_kamar_id = hotel_tipe_kamar.id');
+		$this->db->where('hotel_kamar.id', $id);
+		$data['kamar'] = $this->db->get()->row_array();
+		$data['tamu'] = $this->db->get_where('hotel_tamu', ['hotel_tamu.nomor_telp' => $nomor_telp])->row_array();
+
+		$this->form_validation->set_rules('tgl_cin', 'Tanggal Check in', 'required|trim');
+		$this->form_validation->set_rules('tgl_cout', 'Tanggal Check out', 'required|trim');
+
+		if ($this->form_validation->run() == false) {
+			$this->load->view('templates/header', $data);
+			$this->load->view('templates/topbar', $data);
+			$this->load->view('templates/sidebar', $data);
+			$this->load->view('tamu/add-book', $data);
+			$this->load->view('templates/footer');
+		} else {
+			$c_in = strtotime($this->input->post('tgl_cin'));
+			$c_out = strtotime($this->input->post('tgl_cout'));
+			$selisih = ($c_out - $c_in)/86400;
+			$harga = $this->input->post('harga');
+			$biaya = $selisih * $harga;
+			$data = [
+				'tgl_inv' => time(),
+				'no_invoice' => $this->input->post('nomor_invoice'),
+				'hotel_tamu_id' => $this->input->post('id_tamu'),
+				'hotel_kamar_id' => $this->input->post('id_kamar'),
+				'jml_dewasa' => $this->input->post('jumlah_dewasa'),
+				'jml_anak' => $this->input->post('jumlah_anak'),
+				'tgl_c_in' => $c_in,
+				'tgl_c_out' => $c_out,
+				'biaya' => $biaya,
+				'status' => 0,
+			];
+
+			$this->db->insert('hotel_booking', $data);
+			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Data berhasil ditambahkan.</div>');
+			redirect('user/viewbook');
+		}
+
+	}
+
+	public function hapusbook($id)
+	{
+		
+		$this->db->delete('hotel_booking', ['id_book' => $id]);
+		$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Data berhasil dihapus!</div>');
+		redirect('layanan');
+	}
+
+	public function konfBook($id)
+	{
+		$data['title'] = 'Edit Profile';
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+		$this->db->select('*');
+		$this->db->from('hotel_kamar');
+		$this->db->join('hotel_booking', 'hotel_booking.hotel_kamar_id = hotel_kamar.id');
+		$this->db->join('hotel_tamu', 'hotel_booking.hotel_tamu_id = hotel_tamu.id');
+		$this->db->where('hotel_booking.id_book', $id);
+		$data['booking'] = $this->db->get()->row_array();
+
+		$this->form_validation->set_rules('name', 'Full Name', 'required|trim');
+
+		if($this->form_validation->run() == false) {
+			$this->load->view('templates/header', $data);
+			$this->load->view('templates/topbar', $data);
+			$this->load->view('templates/sidebar', $data);
+			$this->load->view('tamu/konfirmasi', $data);
+			$this->load->view('templates/footer');
+		} else {
+			$name = $this->input->post('name');
+			$email = $this->input->post('email');
+
+			// cek jika ada gambar (file) yang akan diupload
+			$upload_image = $_FILES['image']['name'];
+
+			if ($upload_image) {
+				$config['allowed_types'] = 'gif|jpg|png';
+				$config['max_size']      = '2048';
+				$config['upload_path']   = './assets/img/profile/';
+
+				$this->load->library('upload', $config);
+
+				if ($this->upload->do_upload('image')) {
+					// cek dulu gambar lamanya apakah default
+					$old_image = $data['user']['image'];
+					if ( $old_image != 'default.jpg') {
+						// jika bukan, maka hapus saja agar tidak terjadi penumpukan file
+						unlink(FCPATH . 'assets/img/profile/' . $old_image);
+					}
+
+					$new_image = $this->upload->data('file_name');
+					$this->db->set('image', $new_image);
+				} else {
+					echo $this->upload->display_errors();
+				}
+			}
+
+			$this->db->set('date_modified', time());
+			$this->db->set('name', $name);
+			$this->db->where('email', $email);
+			$this->db->update('user');
+
+			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Your profile has been updated!</div>');
+			redirect('user');
+		}
 	}
 
     public function changePassword()
