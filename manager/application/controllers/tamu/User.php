@@ -206,27 +206,6 @@ class User extends CI_Controller
         }
     }
 
-    // Fitur tamu hotel
-    public function viewBook()
-	{
-		$data['title'] = 'Kamar Saya';
-		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-		$nomor_telp = 62 . substr($data['user']['email'], 1);
-
-		$this->db->select('*');
-		$this->db->from('hotel_kamar');
-		$this->db->join('hotel_booking', 'hotel_booking.hotel_kamar_id = hotel_kamar.id');
-		$this->db->join('hotel_tamu', 'hotel_booking.hotel_tamu_id = hotel_tamu.id');
-		$this->db->where('hotel_tamu.nomor_telp', $nomor_telp);
-		$data['booking'] = $this->db->get()->result_array();
-		
-		$this->load->view('templates/header', $data);
-		$this->load->view('templates/topbar', $data);
-		$this->load->view('templates/sidebar', $data);
-		$this->load->view('room/index', $data);
-		$this->load->view('templates/footer');
-	}
-
     public function changePassword()
 	{
 		$data['title'] = 'Change Password';

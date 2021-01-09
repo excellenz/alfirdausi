@@ -54,7 +54,7 @@
                   <td><?= $t['email']; ?></td>
                   <td>
                     <a href="edittamu/<?= $t['id']; ?>" class="badge badge-success">edit</a>
-                    <a href="javascript:hapusData(<?= $t['id']; ?>)" class="badge badge-danger">delete</a>
+                    <a href="javascript:hapusData(<?= $t['nomor_telp']; ?>)" class="badge badge-danger">delete</a>
                   </td>
                 </tr>
                 <?php

@@ -28,7 +28,7 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Silahkan masukkan nomor HP (WA) anda</p>
 
-      <form action="action.php" method="post">
+      <form method="post" enctype="multipart/form-data" action="config.php">
         <div class="input-group mb-3">
           <input type="text" class="form-control" name="nomor_telp" placeholder="No. WA">
           <div class="input-group-append">

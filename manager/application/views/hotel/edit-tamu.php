@@ -95,11 +95,11 @@
                     <div class="form-group">
                       <div class="row">
                         <div class="col-sm-6">
-                          <label>No. Whatsapp (Tidak diawali 0)</label>
+                          <label>No. Whatsapp</label>
                           <input class="form-control" name="nomor_telp" placeholder="Misal: 8123456789" value="<?= $tamu['nomor_telp']; ?>">
                         </div>
                         <div class="col-sm-6">
-                          <label>Email(Opsional)</label>
+                          <label>Email (Opsional)</label>
                           <input class="form-control" name="email" value="<?= $tamu['email']; ?>">
                         </div>
                       </div>

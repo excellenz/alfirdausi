@@ -102,7 +102,7 @@
                           <input class="form-control" name="nomor_telp" placeholder="Misal: 08123456789" required />
                         </div>
                         <div class="col-sm-6">
-                          <label>Email(Opsional)</label>
+                          <label>Email (Opsional)</label>
                           <input class="form-control" name="email" />
                         </div>
                       </div>
@@ -111,6 +111,7 @@
                 </div>
               </div>
               <div class="box-footer">
+                <input type="hidden" class="form-control" name="password" value="12345" />
                 <button class="btn btn-success" type="submit" name="tamu-add">Registrasi</button>
                 <a class="btn btn-warning" href="tamu">Batal</a>
               </div>

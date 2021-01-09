@@ -16,12 +16,12 @@ class Auth extends CI_Controller
 			redirect('user');
 		}
 
-		$this->form_validation->set_rules('email', 'Email', 'required|trim');
+		$this->form_validation->set_rules('email', 'No HP', 'required|trim');
 		$this->form_validation->set_rules('password', 'Password', 'required|trim');
 		if ( $this->form_validation->run() == false) {
 			$data['title'] = 'Login Page';
 			$this->load->view('templates/auth_header', $data);
-			$this->load->view('auth/login');
+			$this->load->view('tamu/login');
 			$this->load->view('templates/auth_footer');
 		} else{
 			$this->_login();
@@ -48,45 +48,40 @@ class Auth extends CI_Controller
 						'role_id' => $user['role_id']
 					];
 					$this->session->set_userdata($data);
-					if ( $user['role_id'] == 1 ) {
-						redirect('admin');
-					} else {
-						redirect('user');
-					}
+					redirect('user');
 				} else {
 					$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Wrong password!</div>');
-			redirect('auth');
+			redirect('tamu/auth');
 				}
 			} else {
 				$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> This email has not been activated!</div>');
-			redirect('auth');
+			redirect('tamu/auth');
 			}
 		} else {
-			$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Email is not registered!</div>');
-			redirect('auth');
+			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Silakan lakukan registrasi.</div>');
+			redirect('tamu/auth/registration');
 		}
 	}
 
 	public function registration()
 	{
 		if ($this->session->userdata('email')) {
-			redirect('user');
+			redirect('tamu/user');
 		}
 
-		$this->form_validation->set_rules('name', 'Name', 'required|trim');
-		$this->form_validation->set_rules('email', 'Email', 'required|trim|is_unique[user.email]', [
-			'is_unique' => "This email has already registered!"
+		$this->form_validation->set_rules('name', 'Nama Depan', 'required|trim');
+		$this->form_validation->set_rules('nomor_identitas', 'No KTP', 'required|trim');
+		$this->form_validation->set_rules('alamat_provinsi', 'Provinsi', 'required|trim');
+		$this->form_validation->set_rules('alamat_kabupaten', 'Kabupaten', 'required|trim');
+		$this->form_validation->set_rules('alamat_jalan', 'Kelurahan', 'required|trim');
+		$this->form_validation->set_rules('email', 'No HP', 'required|trim|is_unique[user.email]', [
+			'is_unique' => "Nomor telah terdaftar!"
 		]);
-		$this->form_validation->set_rules('password1', 'Password', 'required|trim|min_length[5]|matches[password2]', [
-			'matches' => 'Password dont match!',
-			'min_length' => 'Password too short!'
-		]);
-		$this->form_validation->set_rules('password2', 'Password', 'required|trim|matches[password1]');
 
 		if( $this->form_validation->run() == false ) {
-		$data['title'] = 'WPU User Registration';
+		$data['title'] = 'Al Firdausi | Reservasi';
 		$this->load->view('templates/auth_header', $data);
-		$this->load->view('auth/registration');
+		$this->load->view('tamu/registration');
 		$this->load->view('templates/auth_footer');
 		} else {
 			$email = $this->input->post('email');
@@ -94,11 +89,26 @@ class Auth extends CI_Controller
 				'name' => htmlspecialchars($this->input->post('name', true)),
 				'email' => htmlspecialchars($email),
 				'image' => 'default.jpg',
-				'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
+				'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
 				'role_id' => 3,
 				'is_active' => 1,
 				'date_created' => time(),
 				'date_modified' => time()
+			];
+
+			$nomor_telp = '62' . substr($this->input->post('email', true),1);
+			$data2 = [
+						'prefix' => $this->input->post('prefix'),
+						'nama_depan' => $this->input->post('name'),
+						'nama_belakang' => $this->input->post('nama_belakang'),
+						'tipe_identitas' => $this->input->post('tipe_identitas'),
+						'nomor_identitas' => $this->input->post('nomor_identitas'),
+						'warga_negara' => $this->input->post('warga_negara'),
+						'alamat_jalan' => $this->input->post('alamat_jalan'),
+						'alamat_kabupaten' => $this->input->post('alamat_kabupaten'),
+						'alamat_provinsi' => $this->input->post('alamat_provinsi'),
+						'nomor_telp' => htmlspecialchars($nomor_telp),
+						'email' => htmlspecialchars($this->input->post('email_tamu', true))
 			];
 
 			// siapkan token
@@ -114,9 +124,10 @@ class Auth extends CI_Controller
 
 			// $this->_sendEmail($token, 'verify');
 			$this->db->insert('user', $data);
+			$this->db->insert('hotel_tamu', $data2);
 
-			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Congratulation! Your account has been created. Please login.</div>');
-			redirect('auth');
+			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Registrasi berhasil. Silakan masukkan No HP.</div>');
+			redirect('tamu/auth');
 		}
 	}
 
@@ -196,7 +207,7 @@ class Auth extends CI_Controller
 
 
 		$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">You have been logged out!</div>');
-			redirect('tamu/auth');
+			redirect('auth');
 	}
 
 	public function blocked()

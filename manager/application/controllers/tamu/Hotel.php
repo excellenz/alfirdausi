@@ -72,19 +72,7 @@ class Hotel extends CI_Controller
 						'email' => htmlspecialchars($this->input->post('email', true))
 			];
 
-			$data2 = [
-				'name' => htmlspecialchars($this->input->post('nama_depan', true)),
-				'email' => htmlspecialchars($this->input->post('nomor_telp', true)),
-				'image' => 'default.jpg',
-				'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
-				'role_id' => 3,
-				'is_active' => 1,
-				'date_created' => time(),
-				'date_modified' => time()
-			];
-
 			$this->db->insert('hotel_tamu', $data);
-			$this->db->insert('user', $data2);
 			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Registrasi tamu berhasil. Data sudah ditambahkan.</div>');
 			redirect('hotel/tamu');
 		}
@@ -139,9 +127,7 @@ class Hotel extends CI_Controller
 	public function hapusTamu($id)
 	{
 		
-		$nomor_telp = '0' . substr($id, 2);
-		$this->db->delete('hotel_tamu', ['nomor_telp' => $id]);
-		$this->db->delete('user', ['email' => $nomor_telp]);
+		$this->db->delete('hotel_tamu', ['id' => $id]);
 		$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Data berhasil dihapus!</div>');
 		redirect('hotel/tamu');
 	}
