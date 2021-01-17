@@ -11,13 +11,21 @@ class User extends CI_Controller
 	
 	public function index()
 	{
-		$data['title'] = 'My Profile';
+		$data['title'] = 'Kamar Saya';
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$nomor_telp = 62 . substr($data['user']['email'], 1);
 
+		$this->db->select('*');
+		$this->db->from('hotel_kamar');
+		$this->db->join('hotel_booking', 'hotel_booking.hotel_kamar_id = hotel_kamar.id');
+		$this->db->join('hotel_tamu', 'hotel_booking.hotel_tamu_id = hotel_tamu.id');
+		$this->db->where('hotel_tamu.nomor_telp', $nomor_telp);
+		$data['booking'] = $this->db->get()->result_array();
+		
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/topbar', $data);
 		$this->load->view('templates/sidebar', $data);
-		$this->load->view('user/index', $data);
+		$this->load->view('tamu/view-book', $data);
 		$this->load->view('templates/footer');
 	}
 
@@ -364,7 +372,7 @@ class User extends CI_Controller
 			$this->db->insert('hotel_bukti_transfer', $data);
 
 			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Konfirmasi pembayaran terkirim. Menunggu verifikasi admin.</div>');
-			redirect('https://wa.me/62895320490635?text=Saya sudah melakukan pembayaran untuk booking kamar. Mohon dikonfirmasi.');
+			redirect('https://wa.me/62895320490637?text=Saya sudah melakukan pembayaran untuk booking kamar. Mohon dikonfirmasi.');
 		}
 	}
 
