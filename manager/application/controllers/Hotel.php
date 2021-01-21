@@ -141,6 +141,7 @@ class Hotel extends CI_Controller
 		
 		$nomor_telp = '0' . substr($id, 2);
 		$this->db->delete('hotel_tamu', ['nomor_telp' => $id]);
+		$this->db->delete('hotel_booking', ['hotel_tamu_id' => $id]);
 		$this->db->delete('user', ['email' => $nomor_telp]);
 		$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Data berhasil dihapus!</div>');
 		redirect('hotel/tamu');
